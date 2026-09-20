@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Create Account</title>
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <main class="signup-page">
+      <!-- left side -->
+      <section class="signup-info">
+        <div class="info-content">
+          <div class="logo">Gizza</div>
+
+          <h1>Kabul's kitchens, delivered.</h1>
+
+          <p class="description">
+            Order from verified restaurants near you. Pay with HesabPay, cash or
+            your Gizza wallet.
+          </p>
+        </div>
+
+        <ul class="features">
+          <li>148 restaurants across Kabul, Herat and Mazar</li>
+          <li>Delivery in 25–35 minutes, or collect yourself</li>
+        </ul>
+      </section>
+
+      <!-- right side -->
+      <section class="signup-form-section">
+        <div class="form-container">
+          <div class="signup-title">
+            <h2>Create your account</h2>
+            <p class="subtitle">Two minutes, then you can order.</p>
+          </div>
+
+          <!-- google btn -->
+          <button class="google-btn">
+            <span class="google-icon">G</span>
+            Continue with Google
+          </button>
+
+          <!-- or -->
+          <div class="divider">
+            <span>OR</span>
+          </div>
+
+          <form>
+            <!-- name -->
+            <div class="form-group">
+              <label for="fullname">FULL NAME</label>
+              <input type="text" id="fullname" placeholder="Ataullah Arabzai" />
+            </div>
+
+            <!-- phone -->
+            <div class="form-group">
+              <label for="phone">PHONE NUMBER</label>
+              <div class="phone-input">
+                <input type="text" class="country-code" value="+93" />
+                <input type="tel" id="phone" placeholder="70 0000000" />
+              </div>
+            </div>
+
+            <!-- email -->
+            <div class="form-group">
+              <label for="email"> EMAIL (OPTIONAL) </label>
+              <input type="email" id="email" placeholder="ata@example.com" />
+            </div>
+
+            <!-- password -->
+            <div class="form-group">
+              <label for="password">PASSWORD</label>
+              <input
+                type="password"
+                id="password"
+                placeholder="At least 8 characters"
+              />
+            </div>
+
+            <!-- referral -->
+            <div class="form-group">
+              <label for="referral"> REFERRAL CODE (OPTIONAL) </label>
+              <input type="text" id="referral" placeholder="ATA-101" />
+            </div>
+
+            <!-- terms -->
+            <label class="terms">
+              <input type="checkbox" checked />
+              <span> I agree to the Terms of Service and Privacy Policy </span>
+            </label>
+
+            <!-- submit -->
+            <button type="submit" class="create-btn">Create account</button>
+          </form>
+
+          <p class="login-text">
+            Already have an account?
+            <a href="login.html">Sign in</a>
+          </p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
