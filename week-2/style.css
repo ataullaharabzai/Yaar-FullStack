@@ -364,11 +364,11 @@ form {
   height: 3.4rem;
   border: 2px solid var(--line);
   border-radius: var(--radius);
-  transition: all .15s ease-in;
+  transition: all 0.15s ease-in;
 }
 
 .otp-boxs div:hover {
-    border: 2px solid var(--brand);
+  border: 2px solid var(--brand);
 }
 
 .otp-btns {
@@ -405,10 +405,157 @@ form {
 }
 
 .verify-btn:hover {
-    background-color: var(--brand-dark);
+  background-color: var(--brand-dark);
 }
 
 .timmer {
-    color: var(--muted);
-    font-size: 0.75rem;
+  color: var(--muted);
+  font-size: 0.75rem;
+}
+
+/* Home Page Designing */
+
+header {
+  background-color: var(--surface);
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-direction: column;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 20px;
+}
+
+.logo {
+  color: var(--brand);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+.location {
+  border: 1px solid var(--line);
+  background-color: var(--bg);
+  padding: 5px 15px;
+  border-radius: 12px;
+}
+
+.location p {
+  font-size: 0.6rem;
+  color: var(--muted);
+}
+
+.location span {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--text);
+}
+
+.search-bar {
+  width: 480px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 14px;
+  background-color: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 20px;
+}
+
+.search-bar i {
+  color: #9ca3af;
+  font-size: 14px;
+}
+
+.search-bar input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 13px;
+  color: #374151;
+  background-color: transparent;
+}
+
+.search-bar input::placeholder {
+  color: var(--muted);
+}
+
+.choose-lang {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 7px 10px;
+  gap: 10px;
+  font-size: 0.8rem;
+  border-radius: 999px;
+  background-color: var(--bg);
+}
+
+.choose-lang span {
+  background-color: var(--surface);
+  color: var(--brand);
+  padding: 7px 12px;
+  border-radius: 999px;
+}
+
+.notification {
+  padding: 9px;
+  border-radius: 100%;
+  background-color: var(--bg);
+}
+
+.view-card {
+  padding: 10px 15px;
+  border-radius: 999px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.9rem;
+  color: var(--bg);
+  background-color: var(--brand);
+}
+
+.profile {
+  /* padding: 10px; */
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--brand);
+  color: var(--bg);
+}
+
+/* Header panel */
+
+.routing-panel ul {
+  display: flex;
+  justify-content: stretch;
+  align-items: center;
+  gap: 15px;
+  list-style: none;
+  padding: 10px 20px;
+}
+
+.routing-panel a {
+  text-decoration: none;
+  color: var(--muted);
+  font-size: 0.85rem;
+  border-bottom: 2px solid transparent;
+  padding: 5px 0;
+  transition: all 0.1s ease-in;
+}
+
+.routing-panel a:hover {
+  color: var(--brand);
+  border-bottom: 2px solid var(--brand);
 }
