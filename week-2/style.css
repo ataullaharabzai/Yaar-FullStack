@@ -56,7 +56,7 @@ body {
   max-width: 520px;
 }
 
-.logo {
+.signup-info .logo {
   font-size: 1.2rem;
   font-weight: 700;
   margin-bottom: 2rem;
@@ -430,12 +430,13 @@ header {
   padding: 5px 20px;
 }
 
-.logo {
+.nav .logo {
   color: var(--brand);
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 1.5rem;
+  margin-bottom: 0;
 }
 
 .location {
@@ -468,7 +469,7 @@ header {
   border-radius: 20px;
 }
 
-.search-bar i {
+.search-bar .search-icon {
   color: #9ca3af;
   font-size: 14px;
 }
@@ -558,4 +559,72 @@ header {
 .routing-panel a:hover {
   color: var(--brand);
   border-bottom: 2px solid var(--brand);
+}
+
+/* Discount label */
+
+.discount-label {
+  margin: 30px 15px;
+  border: 1px solid black;
+  padding: 25px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--brand);
+  color: var(--bg);
+}
+
+.discount-info {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.discount-badge p {
+  font-size: 0.7rem;
+}
+
+.discount-title p {
+  font-size: 0.8rem;
+  margin-top: 5px;
+  color: var(--line);
+}
+
+.discount-label-right {
+  padding: 12px 20px;
+  background-color: var(--bg);
+  color: var(--brand);
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 550  ;
+}
+
+/* Filter badges */
+
+.filter-box {
+  margin: 10px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 15px;
+  color: var(--muted);
+  padding: 15px 10px;
+  font-size: 0.8rem;
+}
+
+.filter-box .filter-btn {
+  padding: 10px 15px;
+  border-radius: 999px;
+  background-color: var(--surface);
+  border: 1px solid var(--line);
+  transition: all .12s ease-in;
+}
+
+.filter-box .filter-btn:hover {
+  background-color: var(--brand);
+  color: var(--bg);
+  cursor: pointer;
 }
