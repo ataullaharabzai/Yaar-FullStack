@@ -427,7 +427,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 5px 20px;
+  padding: 10px 20px;
 }
 
 .nav .logo {
@@ -458,15 +458,20 @@ header {
 }
 
 .search-bar {
-  width: 480px;
+  width: 580px;
   height: 38px;
   display: flex;
   align-items: center;
   gap: 10px;
-  padding: 0 14px;
+  padding: 20px 14px;
   background-color: var(--bg);
   border: 1px solid var(--line);
-  border-radius: 20px;
+  border-radius: 12px;
+  transition: all .12s ease-in;
+}
+
+.search-bar:hover {
+  border: 1px solid var(--brand);
 }
 
 .search-bar .search-icon {
