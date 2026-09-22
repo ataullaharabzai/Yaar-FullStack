@@ -649,7 +649,7 @@ header {
   justify-content: center;
   align-items: start;
   flex-direction: column;
-  margin-right: 15px;
+  margin-right: 5px;
   gap: 15px;
   width: 30%;
 }
@@ -730,7 +730,7 @@ header {
 }
 
 .restaurant-card {
-  width: 250px;
+  width: 270px;
   background: white;
   border-radius: 12px;
   overflow: hidden;
