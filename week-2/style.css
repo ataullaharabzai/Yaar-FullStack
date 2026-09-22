@@ -659,6 +659,7 @@ header {
   justify-content: start;
   align-items: start;
   flex-direction: column;
+  gap: 5px;
   border: 1px solid var(--line);
   width: 75%;
   padding: 10px;
@@ -672,6 +673,7 @@ header {
   justify-content: start;
   align-items: start;
   flex-direction: column;
+  gap: 5px;
   border: 1px solid var(--line);
   width: 75%;
   padding: 10px;
