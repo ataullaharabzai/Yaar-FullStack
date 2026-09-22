@@ -822,3 +822,258 @@ header {
 .rating span:not(:first-child) {
   color: var(--muted);
 }
+
+/* Restaurant page */
+
+.hero-img {
+  background-position: cover;
+  min-height: 300px;
+}
+
+.hero-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: var(--bg);
+}
+
+.hero-info span {
+  background-color: transparent;
+}
+
+.back-btn {
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  border: none;
+  padding: 10px 12px;
+  border-radius: 999px;
+  font-size: 0.8rem;
+}
+
+.restaurant-main-content {
+  margin: 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+}
+
+.left-side-content {
+  width: 75%;
+}
+
+.content-head {
+  background-color: var(--surface);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  border-radius: var(--radius);
+}
+
+.content-head-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.order-type {
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  color: var(--muted);
+  background-color: var(--line);
+}
+
+.order-type span {
+  background-color: var(--surface);
+  padding: 10px 10px;
+  border-radius: 999px;
+  color: var(--brand);
+}
+
+.delivery-time {
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
+.content-head-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.content-head-right div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.rating p {
+  font-size: 1rem;
+  color: var(--text);
+}
+
+.delivery-time span {
+  font-size: 1rem;
+  color: var(--text);
+}
+
+.price span {
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
+.list-popular-foods {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.food-card {
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding-right: 16px;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.food-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #0f172a;
+  margin: 0;
+}
+
+.badge {
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--brand);
+  background-color: #e0f2fe;
+  padding: 2px 6px;
+  border-radius: 4px;
+  letter-spacing: 0.5px;
+}
+
+.food-description {
+  font-size: 13px;
+  color: #64748b;
+  line-height: 1.4;
+  margin: 0 0 12px 0;
+  display: -webkit-box;
+}
+
+.card-footer {
+  margin-top: auto;
+}
+
+.food-price {
+  font-size: 15px;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.image-container {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  flex-shrink: 0;
+}
+
+.food-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  background-color: #f1f5f9;
+}
+
+.add-btn {
+  position: absolute;
+  bottom: -6px;
+  right: -6px;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: var(--brand);
+  color: var(--bg);
+  border: 2px solid var(--bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.2s ease;
+}
+
+.add-btn:hover {
+  background-color: #0369a1;
+}
+
+.popular-title {
+  margin: 10px 0 10px 0;
+}
+
+.popular-title p {
+  color: var(--muted);
+}
+
+.checkout-cart {
+  border: 1px solid var(--line);
+  background-color: var(--surface);
+  border-radius: var(--radius);
+}
+
+.cart-head {
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--line);
+}
+
+.cart-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 25px 5px;
+}
+
+.cart-content span {
+  color: var(--text);
+  font-weight: 600;
+  font-size: 1.15rem;
+}
+
+.cart-content p {
+  font-size: 0.8rem;
+  color: var(--muted);
+}
