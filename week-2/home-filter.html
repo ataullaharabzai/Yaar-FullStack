@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Filtered</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/94f1987ab9.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <!-- Navbar head -->
+      <div class="nav">
+        <div class="logo">
+          <p>Ghiza</p>
+        </div>
+        <div class="location">
+          <p>DELIVER TO</p>
+          <span>Home</span>
+        </div>
+        <div class="search-bar">
+          <i class="fa-solid fa-magnifying-glass search-icon"></i>
+          <input type="text" placeholder="Search restaurants and meals" />
+        </div>
+        <div class="choose-lang">
+          <span>English</span>
+          <p>Pashto</p>
+        </div>
+        <div class="notification">
+          <i class="fa-regular fa-bell"></i>
+        </div>
+        <div class="view-card">
+          <p>View cart</p>
+          <span>0</span>
+        </div>
+        <div class="profile">
+          <p>A</p>
+        </div>
+      </div>
+
+      <!-- Navbar routing panel -->
+      <div class="routing-panel">
+        <ul>
+          <li><a href="#">Browse</a></li>
+          <li><a href="order.html">Orders</a></li>
+          <li><a href="favorite.html">Favorites</a></li>
+          <li><a href="wallet.html">Wallet</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- Discount label -->
+
+    <main>
+      <section>
+        <div class="discount-label">
+          <div class="discount-info">
+            <div class="discount-badge">
+              <!-- <span>.</span> -->
+              <p>New here</p>
+            </div>
+            <div class="discount-title">
+              <h2>20% off your first order</h2>
+              <p>Up to AFN 200 off at any verified kitchen. Ends Sunday.</p>
+            </div>
+          </div>
+          <div class="discount-label-right">
+            <p>GHIZA20</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Filter badges -->
+      <section>
+        <div class="filter-box">
+          <div class="filter-btn">All</div>
+          <div class="filter-btn">Kabab</div>
+          <div class="filter-btn">Palaw</div>
+          <div class="filter-btn">Pizza</div>
+          <div class="filter-btn">Burger</div>
+          <div class="filter-btn">Bakery & tea</div>
+          <div class="filter-btn">Sweets</div>
+        </div>
+      </section>
+
+      <!-- Contents -->
+      <section class="main-content">
+        <div class="sort-dietary">
+          <div class="sort">
+            <p class="sort-dietary-title">SORT BY</p>
+            <div class="sort-item">
+              <input type="radio" />
+              <label for="">Recommended</label>
+            </div>
+            <div class="sort-item">
+              <input type="radio" />
+              <label for="">Fastest</label>
+            </div>
+            <div class="sort-item">
+              <input type="radio" />
+              <label for="">Top rated</label>
+            </div>
+            <div class="sort-item">
+              <input type="radio" />
+              <label for="">Lowest fee</label>
+            </div>
+          </div>
+          <div class="dietary">
+            <p class="sort-dietary-title">DIETARY</p>
+            <div>
+              <input type="radio" />
+              <label for="">Vegetarian</label>
+            </div>
+            <div>
+              <input type="radio" />
+              <label for="">Halal certified</label>
+            </div>
+            <div>
+              <input type="radio" />
+              <label for="">Gluten free</label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contents -->
+        <div class="contents">
+          <div class="restaurant-title">
+            <p>Near you</p>
+            <span>See all</sp>
+          </div>
+          <div class="list-restaurants">
+            <div class="restaurant-card">
+              <div class="restaurant-image">
+                <img
+                  src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=80"
+                  alt="Restaurant food"
+                />
+
+                <button class="favorite">♡</button>
+
+                <div class="delivery-info">
+                  <span>25-35 min</span>
+                  <span>AFN 60</span>
+                </div>
+              </div>
+
+              <div class="restaurant-info">
+                <h3>Ghiza Kabab House <span class="verified">
+                    <i class="fa-solid fa-check"></i>
+                </span>
+                </h3>
+
+                <p class="category">Afghan grill · Kabab · 1.2 km</p>
+
+                <div class="rating">
+                  <span>★ 4.8</span>
+                  <span>(1,204)</span>
+                  <span>· Min AFN 200</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
