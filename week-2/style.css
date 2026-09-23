@@ -2079,3 +2079,81 @@ header {
 .place-order:hover {
   background: var(--brand-dark);
 }
+
+/* Notification page designing */
+
+.notification-container {
+  width: 75%;
+}
+
+.notification-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.notification-header p {
+  font-size: 0.85rem;
+  color: var(--brand);
+  font-weight: 600;
+}
+
+.list-notifications {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.notification-card {
+  border: 1px solid var(--line);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 15px;
+  background-color: var(--surface);
+  border-radius: var(--radius);
+  width: 100%;
+}
+
+.active-notification {
+  background-color: #1e51a20e;
+  border: 1.5px solid #1e51a27d;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  background-color: var(--brand);
+  border-radius: 100%;
+}
+
+.notification-card-left {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+}
+
+.unread-notification {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.notification-card .title {
+  font-size: 0.9rem;
+}
+
+.notification-card span {
+  font-size: 0.7rem;
+  color: var(--muted);
+  margin-left: 18px;
+  margin-top: 3px;
+}
+
+.notification-time {
+  font-size: 0.8rem;
+  color: var(--muted);
+}
