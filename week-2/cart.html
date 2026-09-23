@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/94f1987ab9.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <!-- Navbar head -->
+      <div class="nav">
+        <div class="logo">
+          <p>Ghiza</p>
+        </div>
+        <div class="location">
+          <p>DELIVER TO</p>
+          <span>Home</span>
+        </div>
+        <div class="search-bar">
+          <i class="fa-solid fa-magnifying-glass search-icon"></i>
+          <input type="text" placeholder="Search restaurants and meals" />
+        </div>
+        <div class="choose-lang">
+          <span>English</span>
+          <p>Pashto</p>
+        </div>
+        <div class="notification">
+          <i class="fa-regular fa-bell"></i>
+        </div>
+        <div class="view-card">
+          <p>View cart</p>
+          <span>0</span>
+        </div>
+        <div class="profile">
+          <p>A</p>
+        </div>
+      </div>
+
+      <!-- Navbar routing panel -->
+      <div class="routing-panel">
+        <ul>
+          <li><a href="#">Browse</a></li>
+          <li><a href="order.html">Orders</a></li>
+          <li><a href="favorite.html">Favorites</a></li>
+          <li><a href="wallet.html">Wallet</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- main content -->
+    <main class="checkout-page">
+      <div class="checkout-container">
+        <h1 class="checkout-title">Checkout</h1>
+
+        <div class="checkout-layout">
+          <!-- ================= LEFT SIDE ================= -->
+          <section class="checkout-left">
+            <!-- Delivery / Pickup -->
+            <div class="checkout-card delivery-toggle">
+              <button class="toggle-btn active">Delivery</button>
+              <button class="toggle-btn">Pickup</button>
+            </div>
+
+            <!-- Delivery Address -->
+            <div class="checkout-card address-card">
+              <div class="card-header">
+                <span>DELIVERY ADDRESS</span>
+                <button class="change-btn">Change</button>
+              </div>
+
+              <div class="address-content">
+                <div class="address-icon">📍</div>
+
+                <div>
+                  <h3>Home</h3>
+                  <p>Lane 4, Shar-e-Naw, Kabul - second floor, bell 3</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- When + Payment -->
+            <div class="checkout-row">
+              <!-- When -->
+              <div class="checkout-card option-card">
+                <div class="card-title">WHEN</div>
+
+                <label class="option active-option">
+                  <input type="radio" name="delivery-time" checked />
+
+                  <div class="radio-content">
+                    <strong>As soon as possible</strong>
+                    <span>Arrives 19:05 - 19:15</span>
+                  </div>
+                </label>
+
+                <label class="option">
+                  <input type="radio" name="delivery-time" />
+
+                  <div class="radio-content">
+                    <strong>Schedule for later</strong>
+                    <span>Pick a 30-minute window</span>
+                  </div>
+                </label>
+              </div>
+
+              <!-- Payment -->
+              <div class="checkout-card option-card">
+                <div class="card-title">PAYMENT</div>
+
+                <label class="option active-option">
+                  <input type="radio" name="payment" checked />
+
+                  <div class="payment-icon hesabpay">H</div>
+
+                  <div class="radio-content">
+                    <strong>HesabPay</strong>
+                    <span>Pay from your HesabPay wallet</span>
+                  </div>
+                </label>
+
+                <label class="option">
+                  <div class="payment-icon afn">AFN</div>
+
+                  <div class="radio-content">
+                    <strong>Cash on delivery</strong>
+                    <span>Pay the courier in AFN</span>
+                  </div>
+
+                  <input type="radio" name="payment" />
+                </label>
+
+                <label class="option">
+                  <div class="payment-icon wallet">$</div>
+
+                  <div class="radio-content">
+                    <strong>Sufra wallet</strong>
+                    <span>Balance AFN 1,250</span>
+                  </div>
+
+                  <input type="radio" name="payment" />
+                </label>
+              </div>
+            </div>
+
+            <!-- Tip -->
+            <div class="checkout-card tip-card">
+              <div class="card-title">TIP THE COURIER</div>
+
+              <div class="tip-options">
+                <button>No tip</button>
+                <button>AFN 20</button>
+                <button class="selected">AFN 50</button>
+                <button>AFN 100</button>
+              </div>
+            </div>
+
+            <!-- Note -->
+            <div class="checkout-card note-card">
+              <div class="card-title">NOTE FOR THE KITCHEN</div>
+
+              <input type="text" placeholder="e.g. no onions, extra napkins" />
+            </div>
+          </section>
+
+          <!-- ================= RIGHT SIDE ================= -->
+          <aside class="checkout-right">
+            <div class="checkout-card order-summary">
+              <h2>Order summary</h2>
+
+              <!-- Item -->
+              <div class="order-item">
+                <div class="item-info">
+                  <span class="quantity">1×</span>
+
+                  <div>
+                    <strong>Kabab-e Chopan</strong>
+                    <small>Full portion · Medium</small>
+                  </div>
+                </div>
+
+                <strong>AFN 520</strong>
+              </div>
+
+              <!-- Item -->
+              <div class="order-item">
+                <div class="item-info">
+                  <span class="quantity">1×</span>
+
+                  <div>
+                    <strong>Qabuli Palaw</strong>
+                    <small>Full portion · Medium</small>
+                  </div>
+                </div>
+
+                <strong>AFN 450</strong>
+              </div>
+
+              <!-- Promo -->
+              <div class="promo">
+                <input type="text" placeholder="ENTER CODE" />
+
+                <button>Apply</button>
+              </div>
+
+              <!-- Prices -->
+              <div class="price-list">
+                <div>
+                  <span>Subtotal</span>
+                  <span>AFN 970</span>
+                </div>
+
+                <div>
+                  <span>Delivery fee</span>
+                  <span>AFN 60</span>
+                </div>
+
+                <div>
+                  <span>Service fee</span>
+                  <span>AFN 29</span>
+                </div>
+
+                <div>
+                  <span>Courier tip</span>
+                  <span>AFN 50</span>
+                </div>
+
+                <div class="total">
+                  <strong>Total</strong>
+                  <strong>AFN 1,109</strong>
+                </div>
+              </div>
+
+              <button class="place-order">Place order · AFN 1,109</button>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
