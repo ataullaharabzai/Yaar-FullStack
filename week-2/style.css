@@ -1805,7 +1805,8 @@ header {
   margin-bottom: 8px;
 }
 
-.card-header span, .card-title {
+.card-header span,
+.card-title {
   font-size: 0.6rem;
   font-weight: 700;
   color: #9ca3af;
