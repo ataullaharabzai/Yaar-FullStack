@@ -1088,7 +1088,7 @@ header {
   color: var(--muted);
 }
 
-/* Product add to card */
+/* Product store card */
 
 .cart-card {
   width: 300px;
@@ -1099,8 +1099,6 @@ header {
   font-family: Arial, sans-serif;
   box-sizing: border-box;
 }
-
-/* Header */
 
 .cart-header {
   display: flex;
@@ -1256,5 +1254,251 @@ header {
 }
 
 .checkout-btn:hover {
+  background: var(--brand-dark);
+}
+
+/* Add item to product payment card */
+
+.restaurant-main-section {
+  position: relative;
+}
+
+.menu-card {
+  background-color: var(--bg);
+  padding: 20px;
+  width: 100%;
+  max-width: 60%;
+  border-radius: var(--radius);
+  position: absolute;
+  top: 5%;
+  left: 20%;
+  margin: auto;
+}
+
+.product-card-content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.product-card-image {
+  width: 100%;
+  max-width: 300px;
+  height: 220px;
+  object-fit: cover;
+  background-position: center;
+  border-radius: var(--radius);
+}
+
+.product-card-head {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  gap: 15px;
+}
+
+.product-card-header {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  gap: 2px;
+  margin-top: 5px;
+  width: 100%;
+}
+
+.product-card-header h2 {
+  font-size: 1.1rem;
+  color: var(--text);
+}
+
+.product-card-header p, .price-main {
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+.section-title {
+  font-size: 11px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--muted);
+  letter-spacing: 0.5px;
+  margin-bottom: 12px;
+  margin-top: 15px;
+}
+
+/* .block1 {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+} */
+
+.section-block {
+  margin-bottom: 24px;
+}
+
+.selection-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 14px 16px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  width: 100%;
+}
+
+.row-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text);
+}
+
+.row-right {
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.selection-row.active {
+  border-color: var(--brand);
+  background-color: #f1f7fc;
+}
+
+.radio-circle {
+  width: 18px;
+  height: 18px;
+  border: 2px solid var(--muted);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.selection-row.active .radio-circle {
+  border-color: var(--brand);
+}
+
+.selection-row.active .radio-circle::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background: var(--brand);
+  border-radius: 50%;
+}
+
+.extras-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+}
+
+.checkbox-box {
+  width: 18px;
+  height: 18px;
+  border: 2px solid var(--line);
+  border-radius: 4px;
+}
+
+.spice-grid {
+  /* display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  gap: 5px;
+  overflow: hidden; */
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 10px;
+  gap: 5px;
+}
+
+.spice-option {
+  text-align: center;
+  padding: 12px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--muted);
+  cursor: pointer;
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+
+.spice-option:last-child {
+  border-right: none;
+}
+
+.spice-option.active {
+  border: 2px solid var(--brand);
+  border-radius: var(--radius);
+  color: var(--brand);
+  background-color: var(--bg);
+  margin: -1px;
+  z-index: 1;
+}
+
+.footer-actions {
+  padding: 16px 24px;
+  border-top: 1px solid var(--line);
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: var(--bg);
+}
+
+.quantity-counter {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 4px;
+}
+
+.counter-btn {
+  width: 36px;
+  height: 36px;
+  border: none;
+  background: transparent;
+  font-size: 18px;
+  color: var(--brand);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.counter-val {
+  width: 30px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 0.85rem;
+  color: var(--text);
+}
+
+.add-to-cart-btn {
+  flex: 1;
+  background: var(--brand);
+  color: var(--bg);
+  border: none;
+  border-radius: 999px;
+  padding: 14px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
+
+.add-to-cart-btn:hover {
   background: var(--brand-dark);
 }
