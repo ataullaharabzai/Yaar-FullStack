@@ -835,7 +835,7 @@ header {
   height: 100%;
   position: absolute;
   top: 0px;
-  opacity: .5;
+  opacity: 0.5;
 }
 
 .hero-info {
@@ -1194,7 +1194,7 @@ header {
   cursor: pointer;
   padding: 8px 10px;
   border-radius: 5px;
-  transition: all .1s ease-in;
+  transition: all 0.1s ease-in;
 }
 
 .remove-btn:hover {
@@ -1205,7 +1205,8 @@ header {
   padding-top: 14px;
 }
 
-.summary-row, .total-row {
+.summary-row,
+.total-row {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1311,7 +1312,8 @@ header {
   color: var(--text);
 }
 
-.product-card-header p, .price-main {
+.product-card-header p,
+.price-main {
   font-size: 0.8rem;
   color: var(--muted);
 }
@@ -1499,4 +1501,229 @@ header {
 
 .add-to-cart-btn:hover {
   background: var(--brand-dark);
+}
+
+/* Wallet page designing */
+
+.wallet-main-page {
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+  margin-top: 30px;
+  padding: 15px;
+  display: flex;
+  gap: 25px;
+}
+
+/* .left-side-user-info {
+  border: 1px solid var(--line);
+  width: 25%;
+  padding: 15px;
+  border-radius: var(--radius);
+  background-color: var(--surface);
+} */
+
+.wallet-user-info {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-bottom: 1px solid var(--line);
+  padding: 5px 10px;
+  border-radius: var(--radius);
+  background-color: var(--surface);
+}
+
+.user-profile img {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+}
+
+.user-profile span {
+  color: var(--text);
+  font-size: 0.85rem;
+}
+
+.user-profile p {
+  color: var(--muted);
+  font-size: 0.7rem;
+  margin-top: 2px;
+}
+
+.user-categories {
+  font-size: 0.85rem;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  gap: 5px;
+  background-color: var(--surface);
+  width: 100%;
+  padding: 10px 10px;
+  border-radius: var(--radius);
+}
+
+.user-categories p {
+  padding: 10px 5px;
+  width: 100%;
+  border-radius: var(--radius);
+  color: var(--muted);
+}
+
+.user-categories p:hover {
+  background-color: #036aa12f;
+  color: #0369a1;
+  cursor: pointer;
+}
+
+.logout {
+  padding: 12px 10px;
+  width: 100%;
+  border-radius: 999px;
+  border: none;
+  outline: none;
+  color: var(--danger);
+  background-color: rgba(255, 0, 0, 0.174);
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.logout:hover {
+  background-color: rgba(255, 0, 0, 0.233);
+}
+
+.address-cards {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.addresses {
+  width: 75%;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.addresses h2 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+  color: var(--text);
+}
+
+.address-card {
+  border-radius: var(--radius);
+  padding: 10px;
+  background-color: var(--surface);
+  max-width: 310px;
+}
+
+.address-card.default {
+  border: 1px solid var(--line);
+}
+
+.address-card-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.address-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: #ebf3ff;
+  color: #1e50a2;
+  font-weight: 700;
+  font-size: 16px;
+  border-radius: 50%;
+}
+
+.address-title-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.address-title {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #1a202c;
+}
+
+.badge-default {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: #1e50a2;
+  background-color: #ebf3ff;
+  padding: 2px 6px;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+
+.address-details {
+  margin: 0 0 5px 0;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #718096;
+}
+
+.address-card-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.btn {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  background: transparent;
+  transition: all 0.2s ease;
+}
+
+.btn-outline {
+  border: 1px solid #e2e8f0;
+  color: #4a5568;
+}
+
+.btn-outline:hover {
+  background-color: #f7fafc;
+  border-color: #cbd5e0;
+}
+
+.default-btn {
+  background-color: #036aa141;
+  color: #0369a1;
+  border-radius: 999px;
+}
+
+.new-address-btn {
+  padding: 13px 10px;
+  width: 100%;
+  outline: none;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background-color: var(--surface);
+  color: var(--brand);
+  font-weight: bold;
 }
