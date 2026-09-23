@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Restaurant</title>
+    <title>Product add to card</title>
     <link rel="stylesheet" href="style.css" />
     <script
       src="https://kit.fontawesome.com/94f1987ab9.js"
@@ -59,6 +59,8 @@
           src="https://images.unsplash.com/photo-1684253639356-0bf69d410ee2?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGNoYXBsaSUyMGthYmFifGVufDB8fDB8fHww"
           alt="Restaurant food"
         />
+
+        <div class="opacity"></div>
 
         <button class="favorite">♡</button>
 
@@ -206,17 +208,68 @@
         </section>
       </div>
 
-      <!-- Main content right side -->
-       <div class="checkout-cart">
-        <div class="cart-head">
+      <!-- Main content right side checkout card -->
+      <div class="cart-card">
+        <div class="cart-header">
           <h3>Your cart</h3>
-          <p>0</p>
+          <span class="cart-count">2</span>
         </div>
-        <div class="cart-content">
-            <span>Your cart is empty</span>
-            <p>Browse kitchen near you and add something you love.</p>
+        <div class="cart-items">
+          <div class="cart-item">
+            <div class="item-info">
+              <h4>Kabab-e Chopan</h4>
+              <p>Full portion · Medium</p>
+            </div>
+            <div class="item-price">AFN 520</div>
+            <div class="item-bottom">
+              <div class="quantity">
+                <button>-</button>
+                <span>1</span>
+                <button>+</button>
+              </div>
+              <button class="remove-btn">Remove</button>
+            </div>
+          </div>
+          <div class="cart-item">
+            <div class="item-info">
+              <h4>Qabuli Palaw</h4>
+              <p>Full portion · Medium</p>
+            </div>
+            <div class="item-price">AFN 450</div>
+            <div class="item-bottom">
+              <div class="quantity">
+                <button>-</button>
+                <span>1</span>
+                <button>+</button>
+              </div>
+              <button class="remove-btn">Remove</button>
+            </div>
+          </div>
         </div>
-       </div>
+        <div class="cart-summary">
+          <div class="summary-row">
+            <span>Subtotal</span>
+            <span>AFN 970</span>
+          </div>
+          <div class="summary-row">
+            <span>Delivery fee</span>
+            <span>AFN 60</span>
+          </div>
+          <div class="summary-row">
+            <span>Service fee</span>
+            <span>AFN 29</span>
+          </div>
+          <div class="summary-row">
+            <span>Courier tip</span>
+            <span>AFN 50</span>
+          </div>
+          <div class="total-row">
+            <span>Total</span>
+            <strong>AFN 1,109</strong>
+          </div>
+          <button class="checkout-btn">Checkout</button>
+        </div>
+      </div>
     </section>
   </body>
 </html>
