@@ -615,7 +615,7 @@ header {
   display: flex;
   justify-content: start;
   align-items: center;
-  gap: 15px;
+  gap: 5px;
   color: var(--muted);
   padding: 15px 10px;
   font-size: 0.8rem;
@@ -661,11 +661,10 @@ header {
   flex-direction: column;
   gap: 5px;
   border: 1px solid var(--line);
-  width: 75%;
-  padding: 10px;
+  width: 70%;
+  padding: 20px 15px;
   background-color: var(--surface);
   border-radius: var(--radius);
-  box-shadow: 1px 1px 5px var(--muted);
 }
 
 .dietary {
@@ -675,11 +674,10 @@ header {
   flex-direction: column;
   gap: 5px;
   border: 1px solid var(--line);
-  width: 75%;
-  padding: 10px;
+  width: 70%;
+  padding: 20px 15px;
   background-color: var(--surface);
   border-radius: var(--radius);
-  box-shadow: 1px 1px 5px var(--muted);
 }
 
 .sort-dietary-title {
