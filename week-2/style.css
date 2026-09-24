@@ -1503,7 +1503,7 @@ header {
   background: var(--brand-dark);
 }
 
-/* Wallet page designing */
+/* Add Address page designing */
 
 .wallet-main-page {
   width: 100%;
@@ -2157,4 +2157,218 @@ header {
 .notification-time {
   font-size: 0.8rem;
   color: var(--muted);
+}
+
+/* Wallet page designing */
+
+.wallet-container {
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+  margin-top: 20px;
+  display: flex;
+  align-items: start;
+  gap: 20px;
+}
+
+.right-side-wallet-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.wallet-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+}
+
+.head-left-cart {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-direction: column;
+  gap: 10px;
+  padding: 25px 15px;
+  background-color: var(--brand);
+  color: var(--bg);
+  width: 100%;
+  border-radius: var(--radius);
+}
+
+.description {
+  font-size: 0.65rem;
+  /* color: var(--muted); */
+}
+
+.head-left-cart span {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.head-left-cart button {
+  border: none;
+  outline: none;
+  padding: 12px 5px;
+  width: 60%;
+  border-radius: 999px;
+  background-color: var(--bg);
+  color: var(--brand);
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.head-right-cart {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-direction: column;
+  gap: 10px;
+  padding: 25px 15px;
+  background-color: var(--surface);
+  width: 100%;
+  border-radius: var(--radius);
+  border: 1px solid var(--line);
+}
+
+.head-right-cart span {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.code-share {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.code-share p {
+  width: 75%;
+  text-align: center;
+  padding: 10px 5px;
+  background-color: #036aa12d;
+  border-radius: var(--radius);
+  font-size: 0.9rem;
+  color: var(--brand);
+}
+
+.code-share button {
+  padding: 12px 15px;
+  outline: none;
+  border: none;
+  text-align: center;
+  font-size: 0.85rem;
+  border-radius: 999px;
+  color: var(--bg);
+  background-color: var(--brand);
+}
+
+.mini-title {
+  font-size: 0.7rem;
+  color: var(--muted);
+}
+
+.discount-freeOrder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+}
+
+.discount-cart {
+  background-color: var(--surface);
+  border: 1px solid var(--line);
+  width: 100%;
+  padding: 15px 15px;
+  border-radius: var(--radius);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.free-delivery {
+  background-color: var(--surface);
+  border: 1px solid var(--line);
+  width: 100%;
+  padding: 15px 15px;
+  border-radius: var(--radius);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.discount-cart-left span {
+  font-size: 0.9rem;
+  color: var(--text);
+  font-weight: 600;
+}
+
+.yourCode-description {
+  font-size: 0.7rem;
+ color: var(--muted);
+}
+
+.free-delivery-description {
+  font-size: 0.7rem;
+ color: var(--muted);
+}
+
+.ghiza-code, .no-fee {
+  padding: 8px;
+  background-color: #036aa125;
+  color: var(--brand);
+  border-radius: var(--radius);
+  font-size: 0.7rem;
+}
+
+.transactions-list {
+  width: 100%;
+  background-color: var(--surface);
+  border-radius: var(--radius);
+}
+
+.transactins-cart {
+  width: 100%;
+  border-bottom: 1px solid var(--line);
+  padding: 12px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.transactins-cart-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.transaction-title {
+  font-size: 0.8rem;
+  color: var(--text);
+  font-weight: 600;
+}
+
+.transaction-amount {
+  color: var(--success);
+  font-size: 0.8rem;
+}
+
+.transaction-icon {
+  width: 30px;
+  height: 30px;
+  background-color: #16a34a38;
+  color: var(--success);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
 }
