@@ -2376,7 +2376,7 @@ header {
 
 /* ------------------ Responsive Design (Mobile screen) ------------------ */
 
-@media (max-width: 768px) {
+@media (max-width: 640px) {
   .signup-page,
   .login-page {
     display: block;
@@ -2588,6 +2588,93 @@ header {
     background-color: #036aa116;
     border: 1.5px solid #0369a1;
   }
+
+  /* Recent search page */
+
+  .recent-search-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+  }
+
+  .recent-searchbar {
+    width: 100%;
+  }
+
+  .recent-back-btn, .slider {
+    padding: 13px;
+    background-color: var(--bg);
+    border-radius: 999px;
+  }
+
+  .recent-search-main {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .filter-btns {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .filter-btns p {
+    font-size: 0.8rem;
+    color: var(--muted);
+  }
+
+  .recent-search-btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .recent-search-btns div {
+    padding: 12px 15px;
+    background-color: var(--surface);
+    border-radius: 999px;
+    color: var(--muted);
+    font-size: 0.8rem;
+  }
+
+  .recent-search-restaurants {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .recent-search-restaurants p {
+    color: var(--muted);
+    font-size: 0.9rem;
+    width: 100%;
+  }
+
+  .searched-restaurants-list {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .food-card {
+    width: 100%;
+  }
+
 }
 
 @media (min-width: 1024px) {
