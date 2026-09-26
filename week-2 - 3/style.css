@@ -2377,7 +2377,7 @@ header {
 /* ------------------ Responsive Design (Mobile screen) ------------------ */
 
 @media (max-width: 768px) {
-  .signup-page {
+  .signup-page, .login-page {
     display: block;
     min-height: 100vh;
   }
@@ -2389,6 +2389,11 @@ header {
   .signup-form-section {
     width: 100%;
     min-height: 100vh;
-    background-color: red;
+  }
+
+  .signup-title {
+    display: flex;
+    justify-content: center;
+    align-items: start;
   }
 }
