@@ -2688,6 +2688,8 @@ header {
 
   .hero-info-mobile {
     padding: 20px;
+    background-color: var(--surface);
+    border-radius: 20px 20px 0 0;
   }
 
   .content-head {
@@ -2793,6 +2795,10 @@ header {
   }
 
   .hero-info-mobile {
+    display: none;
+  }
+
+  .restaurant-back-btn {
     display: none;
   }
 }
