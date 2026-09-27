@@ -1,0 +1,7 @@
+Create account
+login
+home
+otp
+recent-search
+restaurant
+add to card
