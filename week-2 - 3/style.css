@@ -2603,7 +2603,8 @@ header {
     width: 100%;
   }
 
-  .recent-back-btn, .slider {
+  .recent-back-btn,
+  .slider {
     padding: 13px;
     background-color: var(--bg);
     border-radius: 999px;
@@ -2675,6 +2676,107 @@ header {
     width: 100%;
   }
 
+  /* Restaurant page */
+
+  .checkout-cart {
+    display: none;
+  }
+
+  .delivery-info {
+    display: none;
+  }
+
+  .hero-info-mobile {
+    padding: 20px;
+  }
+
+  .content-head {
+    display: none;
+  }
+
+  .left-side-content {
+    width: 100%;
+  }
+
+  .delivery-pickup-box {
+    width: 100%;
+    padding: 10px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .content-head-right,
+  .content-head-left {
+    width: 100%;
+  }
+
+  .content-head-right {
+    align-items: center;
+    gap: 8px;
+    background-color: var(--surface);
+    border-radius: var(--radius);
+    height: 66px;
+    border: 1px solid var(--line);
+  }
+
+  .content-head-right > div {
+    flex: 1;
+    min-width: 0;
+    width: auto;
+  }
+
+  .content-head-right .delivery-time {
+    border-right: 1px solid var(--line);
+    border-left: 1px solid var(--line);
+  }
+
+  .order-type {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .order-type span,
+  .order-type p {
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+    padding: 15px;
+  }
+
+  .content-head-right p {
+    width: auto;
+    text-align: center;
+    font-size: 0.85rem;
+    padding: 0;
+  }
+
+  .back-btn {
+    display: none;
+  }
+
+  .restaurant-back-btn {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    border: none;
+    /* padding: 12px 12px; */
+    width: 44px;
+    height: 44px;
+    border-radius: 100%;
+    font-size: 0.8rem;
+  }
+
+  .favorite {
+    width: 44px;
+    height: 44px;
+    border-radius: 100%;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -2683,6 +2785,14 @@ header {
   }
 
   .choose-delivery-address-card {
+    display: none;
+  }
+
+  .delivery-pickup-box {
+    display: none;
+  }
+
+  .hero-info-mobile {
     display: none;
   }
 }
