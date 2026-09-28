@@ -1506,7 +1506,6 @@ header {
 
 .wallet-main-page {
   width: 100%;
-  max-width: 900px;
   margin: auto;
   margin-top: 30px;
   padding: 15px;
@@ -2082,7 +2081,7 @@ header {
 /* Notification page designing */
 
 .notification-container {
-  width: 75%;
+  width: 100%;
 }
 
 .notification-header {
@@ -2830,7 +2829,7 @@ header {
   .price-main {
     font-size: 1rem;
     font-weight: 600;
-    margin-bottom: 14px;
+    margin-bottom: 14px; 
   }
 
   .section-title {
@@ -3052,6 +3051,57 @@ header {
     border-radius: 999px;
   }
 
+  /* Notifications page design */
+
+  .wallet-user-info {
+    display: none;
+  }
+
+  .notification-header {
+    display: none;
+  }
+
+  .notification-title {
+    display: flex;
+    align-items: center;
+  }
+
+  .notification-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .noti-and-back {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .notification-back-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+
+  .noti-back {
+    width: 40px;
+    height: 40px;
+    background-color: var(--line);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .wallet-main-page {
+    width: 100%;
+  }
+
 }
 
 @media (min-width: 1024px) {
@@ -3085,5 +3135,13 @@ header {
 
   .address-card {
   max-width: 310px;
+  }
+
+  .wallet-main-page {
+  max-width: 900px;
+  }
+
+  .notification-container {
+  max-width: 75%;
   }
 }
