@@ -1,3 +1,5 @@
+PAGES THAT ARE DONE WITH RESPONSIVE DESIGN
+
 Create account
 login
 home
@@ -6,3 +8,4 @@ recent-search
 restaurant
 add to card
 choose delivery
+home filter
