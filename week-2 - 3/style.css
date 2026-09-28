@@ -3269,6 +3269,10 @@ header {
     display: none;
   }
 
+  .address-head {
+    display: none;
+  }
+
   .footer-nav {
     display: none;
   }
