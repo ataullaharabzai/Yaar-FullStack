@@ -3130,6 +3130,7 @@ header {
     width: 0;
   }
 
+<<<<<<< HEAD
   .your-cart-title {
     width: 100%;
     background-color: var(--surface);
@@ -3141,6 +3142,92 @@ header {
   }
 
   .your-cart-icon {
+=======
+  /* Wallet page design */
+
+  .wallet-header {
+    display: flex;
+    flex-direction: column;
+    padding: 18px;
+  }
+
+  .head-left-cart span {
+    font-size: 2.2rem;
+  }
+
+  .head-left-cart p {
+    font-size: 0.9rem;
+    color: var(--line);
+  }
+
+  .head-left-cart button {
+    padding: 10px 12px;
+    width: 45%;
+  }
+
+  .discount-freeOrder {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .mini-title {
+    margin-left: 15px;
+  }
+
+  .transactins-cart {
+    padding: 15px;
+  }
+
+  .footer-nav {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 20px 10px;
+    background-color: var(--surface);
+    border-top: 1px solid var(--line);
+  }
+
+  .navigation-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .navigation-list a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    text-decoration: none;
+    color: var(--muted);
+    font-size: 0.8rem;
+    transition: all .15s ease-in;
+  }
+
+  .navigation-list a:hover {
+    color: var(--brand);
+  }
+
+  .fa-house,
+  .fa-magnifying-glass,
+  .fa-clipboard,
+  .fa-heart,
+  .fa-circle-user {
+    font-size: 1.2rem;
+  }
+
+  .wallet-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 10px;
+  }
+
+  .wallet-icon {
+>>>>>>> b4ae787 (wallet page responsive add)
     width: 44px;
     height: 44px;
     display: flex;
@@ -3153,6 +3240,14 @@ header {
 
 @media (min-width: 1024px) {
   .mobile-nav {
+    display: none;
+  }
+
+  .footer-nav {
+    display: none;
+  }
+
+  .wallet-title {
     display: none;
   }
 
