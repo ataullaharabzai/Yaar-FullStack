@@ -24,6 +24,10 @@ body {
   overflow-x: hidden;
 }
 
+a {
+  text-decoration: none;
+}
+
 body {
   font-family: "Inter", sans-serif;
   background: var(--bg);
@@ -3106,6 +3110,10 @@ header {
   /* Product add to card */
 
   .restaurant-image {
+    display: none;
+  }
+
+  .mobile-nav {
     display: none;
   }
 
