@@ -2790,7 +2790,7 @@ header {
     width: auto;
     max-height: 75vh;
     background: var(--surface);
-    border-radius: 24px 24px 0 0; 
+    border-radius: 24px 24px 0 0;
     overflow-y: auto;
     overflow-x: hidden;
     z-index: 1000;
@@ -2830,7 +2830,7 @@ header {
   .price-main {
     font-size: 1rem;
     font-weight: 600;
-    margin-bottom: 14px; 
+    margin-bottom: 14px;
   }
 
   .section-title {
@@ -3072,7 +3072,7 @@ header {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-  } 
+  }
 
   .noti-and-back {
     display: flex;
@@ -3109,7 +3109,8 @@ header {
     display: none;
   }
 
-  .list-popular-foods, .popular-title {
+  .list-popular-foods,
+  .popular-title {
     display: none;
   }
 
@@ -3121,10 +3122,110 @@ header {
     width: 0;
   }
 
+  /* Wallet page design */
+
+  .wallet-header {
+    display: flex;
+    flex-direction: column;
+    padding: 18px;
+  }
+
+  .head-left-cart span {
+    font-size: 2.2rem;
+  }
+
+  .head-left-cart p {
+    font-size: 0.9rem;
+    color: var(--line);
+  }
+
+  .head-left-cart button {
+    padding: 10px 12px;
+    width: 45%;
+  }
+
+  .discount-freeOrder {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .mini-title {
+    margin-left: 15px;
+  }
+
+  .transactins-cart {
+    padding: 15px;
+  }
+
+  .footer-nav {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 20px 10px;
+    background-color: var(--surface);
+    border-top: 1px solid var(--line);
+  }
+
+  .navigation-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .navigation-list a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    text-decoration: none;
+    color: var(--muted);
+    font-size: 0.8rem;
+    transition: all .15s ease-in;
+  }
+
+  .navigation-list a:hover {
+    color: var(--brand);
+  }
+
+  .fa-house,
+  .fa-magnifying-glass,
+  .fa-clipboard,
+  .fa-heart,
+  .fa-circle-user {
+    font-size: 1.2rem;
+  }
+
+  .wallet-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 10px;
+  }
+
+  .wallet-icon {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--line);
+    border-radius: 100%;
+  }
 }
 
 @media (min-width: 1024px) {
   .mobile-nav {
+    display: none;
+  }
+
+  .footer-nav {
+    display: none;
+  }
+
+  .wallet-title {
     display: none;
   }
 
@@ -3153,18 +3254,18 @@ header {
   }
 
   .address-card {
-  max-width: 310px;
+    max-width: 310px;
   }
 
   .wallet-main-page {
-  max-width: 900px;
+    max-width: 900px;
   }
 
   .notification-container {
-  max-width: 75%;
+    max-width: 75%;
   }
 
   .cart-card {
-  max-width: 300px;
+    max-width: 300px;
   }
 }
