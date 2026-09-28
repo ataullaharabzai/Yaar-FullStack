@@ -3233,6 +3233,32 @@ header {
     background-color: var(--line);
     border-radius: 100%;
   }
+
+  .addresses {
+    width: 100%;
+  }
+
+  .address-main-title {
+    display: none;
+  }
+
+  .address-title-icon {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--line);
+    border-radius: 100%;
+  }
+
+  .address-head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
 }
 
 @media (min-width: 1024px) {
