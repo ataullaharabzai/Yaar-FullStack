@@ -1089,13 +1089,13 @@ header {
 /* Product store card */
 
 .cart-card {
-  width: 300px;
+  width: 100%;
   background: #fff;
   border: 1px solid #e5e7eb;
   border-radius: 12px;
   padding: 18px;
-  font-family: Arial, sans-serif;
   box-sizing: border-box;
+  margin: 0 auto;
 }
 
 .cart-header {
@@ -1260,6 +1260,7 @@ header {
 
 .restaurant-main-section {
   position: relative;
+  width: 100%;
 }
 
 .menu-card {
@@ -3071,7 +3072,7 @@ header {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-  }
+  } 
 
   .noti-and-back {
     display: flex;
@@ -3100,6 +3101,24 @@ header {
 
   .wallet-main-page {
     width: 100%;
+  }
+
+  /* Product add to card */
+
+  .restaurant-image {
+    display: none;
+  }
+
+  .list-popular-foods, .popular-title {
+    display: none;
+  }
+
+  .cart-card {
+    width: 100%;
+  }
+
+  .left-side-content {
+    width: 0;
   }
 
 }
@@ -3143,5 +3162,9 @@ header {
 
   .notification-container {
   max-width: 75%;
+  }
+
+  .cart-card {
+  max-width: 300px;
   }
 }
