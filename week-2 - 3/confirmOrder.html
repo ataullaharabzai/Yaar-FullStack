@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order Confirmed</title>
+    <script
+      src="https://kit.fontawesome.com/94f1987ab9.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Only visible on mobile/small screens -->
+    <div class="mobile-container">
+      <!-- Header Banner -->
+      <header class="order-header">
+        <div class="check-icon">
+          <i class="fa-solid fa-check"></i>
+        </div>
+        <div class="header-text">
+          <h2>Order confirmed</h2>
+          <p>The kitchen has your order. We'll message you at each step.</p>
+        </div>
+      </header>
+
+      <!-- Progress Tracker -->
+      <section class="progress-tracker">
+        <div class="steps-row">
+          <div class="step-bar active"></div>
+          <div class="step-bar active"></div>
+          <div class="step-bar"></div>
+          <div class="step-bar"></div>
+        </div>
+        <div class="labels-row">
+          <span class="label current">Placed</span>
+          <span class="label current font-medium">Preparing</span>
+          <span class="label">Ready</span>
+          <span class="label">Completed</span>
+        </div>
+      </section>
+
+      <!-- Order Number -->
+      <section class="order-number-section">
+        <span class="muted-title">Order number</span>
+        <span class="order-id">#SF-4821</span>
+      </section>
+
+      <!-- Order Details -->
+      <main class="order-details">
+        <h2 class="section-title">WHAT YOU ORDERED</h2>
+
+        <!-- Item Info -->
+        <div class="item-row">
+          <div class="item-left">
+            <span class="quantity">1x</span>
+            <div class="item-name-desc">
+              <span class="item-name">Kabuli Special</span>
+              <span class="item-desc">Full portion · Medium</span>
+            </div>
+          </div>
+          <span class="item-price">AFN 460</span>
+        </div>
+
+        <!-- Pricing Breakdown -->
+        <div class="pricing-table">
+          <div class="price-row">
+            <span>Subtotal</span>
+            <span>AFN 460</span>
+          </div>
+          <div class="price-row">
+            <span>Delivery fee</span>
+            <span class="green-text">Free</span>
+          </div>
+          <div class="price-row">
+            <span>Service fee</span>
+            <span>AFN 14</span>
+          </div>
+          <div class="price-row">
+            <span>Courier tip</span>
+            <span>AFN 50</span>
+          </div>
+          <div class="price-row total-row">
+            <span>Total</span>
+            <span>AFN 524</span>
+          </div>
+        </div>
+
+        <!-- Payment Method -->
+        <div class="payment-section">
+          <span class="muted-title">Payment</span>
+          <span class="payment-method">HesabPay</span>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="action-buttons">
+          <button class="btn-outline">Contact restaurant</button>
+          <button class="btn-outline">Get help</button>
+        </div>
+
+        <div class="cancel-section">
+          <button class="btn-cancel">Cancel order</button>
+          <p class="cancel-timer">Free to cancel for 2 more minutes</p>
+        </div>
+      </main>
+    </div>
+
+    <!-- Mobile footer -->
+    <div class="footer-nav">
+      <div class="navigation-list">
+
+        <a href="home.html" class="home">
+          <i class="fa-regular fa-house"></i>
+          <p>Home</p>
+        </a>
+
+        <a href="recent-search.html" class="search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <p>Search</p>
+        </a>
+
+        <a href="home.html" class="orders">
+          <i class="fa-regular fa-clipboard"></i>
+          <p>Orders</p>
+        </a>
+
+        <a href="home.html" class="heart">
+          <i class="fa-regular fa-heart"></i>
+          <p>Favorite</p>
+        </a>
+
+        <a href="profile.html" class="footer-profile">
+          <i class="fa-regular fa-circle-user"></i>
+          <p>Profile</p>
+        </a>
+      </div>
+    </div>
+
+  </body>
+</html>
