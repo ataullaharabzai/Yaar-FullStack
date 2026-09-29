@@ -3707,6 +3707,10 @@ header {
     display: none;
   }
 
+  .mobile-container {
+    display: none;
+  }
+
   .address-head {
     display: none;
   }
