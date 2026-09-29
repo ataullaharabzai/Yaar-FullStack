@@ -3434,6 +3434,253 @@ header {
     cursor: pointer;
   }
 
+  /* Order Confirmed page */
+
+  .order-header {
+    background-color: var(--brand);
+    color: var(--surface);
+    padding: 16px 20px 24px 20px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: row;
+    gap: 14px;
+  }
+
+  .header-text h2 {
+    font-size: 1.35rem;
+    font-weight: 700;
+    margin-bottom: 4px;
+  }
+
+  .header-text p {
+    font-size: 0.8rem;
+    opacity: 0.9;
+    line-height: 1.35;
+  }
+
+  .header-text {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+  }
+
+  .check-icon {
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+
+  .progress-tracker {
+    padding: 20px 20px 16px 20px;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .steps-row {
+    display: flex;
+    gap: 6px;
+    margin-bottom: 8px;
+  }
+
+  .step-bar {
+    flex: 1;
+    height: 4px;
+    background-color: var(--line);
+    border-radius: 2px;
+  }
+
+  .step-bar.active {
+    background-color: var(--brand);
+  }
+
+  .labels-row {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .label {
+    font-size: 0.72rem;
+    color: var(--muted);
+  }
+
+  .label.current {
+    color: var(--text);
+  }
+
+  .font-medium {
+    font-weight: 600;
+  }
+
+  .order-number-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 20px;
+    border-bottom: 8px solid var(--line);
+  }
+
+  .muted-title {
+    font-size: 0.85rem;
+    color: var(--muted);
+  }
+
+  .order-id {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--text);
+  }
+
+  .order-details {
+    padding: 20px;
+    flex: 1;
+  }
+
+  .section-title {
+    font-size: 0.75rem;
+    color: var(--muted);
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    margin-bottom: 16px;
+  }
+
+  .item-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 24px;
+  }
+
+  .item-left {
+    display: flex;
+    gap: 12px;
+  }
+
+  .quantity {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--brand);
+  }
+
+  .item-name-desc {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .item-name {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 2px;
+  }
+
+  .item-desc {
+    font-size: 0.8rem;
+    color: var(--muted);
+  }
+
+  .item-price {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--text);
+  }
+
+  .pricing-table {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .price-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    color: var(--muted);
+  }
+
+  .green-text {
+    color: var(--success);
+  }
+
+  .total-row {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--text);
+    margin-top: 4px;
+  }
+
+  .payment-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .payment-method {
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+
+  .action-buttons {
+    display: flex;
+    gap: 12px;
+    margin: 24px 0 16px 0;
+  }
+
+  .btn-outline {
+    flex: 1;
+    background-color: transparent;
+    border: 1px solid var(--line);
+    padding: 12px;
+    border-radius: 24px;
+    font-size: 0.88rem;
+    font-weight: 500;
+    color: var(--text);
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+
+  .btn-outline:active {
+    background-color: #f9fafb;
+  }
+
+  .cancel-section {
+    text-align: center;
+    margin-top: 8px;
+    margin-bottom: 60px; 
+  }
+
+  .btn-cancel {
+    background-color: #fff1f2;
+    border: none;
+    width: 100%;
+    padding: 14px;
+    border-radius: 24px;
+    font-size: 0.92rem;
+    font-weight: 600;
+    color: var(--danger);
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+
+  .btn-cancel:active {
+    background-color: #ffe4e6;
+  }
+
+  .cancel-timer {
+    font-size: 0.78rem;
+    color: var(--muted);
+    margin-top: 8px;
+  }
 }
 
 @media (min-width: 1024px) {
