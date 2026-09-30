@@ -9,7 +9,6 @@ Cart
 >>>>>>> fd902c4 (signup page responsive add for Tablet.)
 choose delivery
 confirm order
-create account
 home filter
 <<<<<<< HEAD
 Notifications
