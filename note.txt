@@ -1,6 +1,3 @@
-Cart
-choose delivery
-confirm order
 Notifications
 production in card
 profile
