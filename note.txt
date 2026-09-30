@@ -6,7 +6,6 @@ confirm order
 home filter
 home
 Notifications
-otp
 production in card
 profile
 recent search
