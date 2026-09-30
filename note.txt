@@ -1,4 +1,3 @@
-Notifications
 production in card
 profile
 recent search

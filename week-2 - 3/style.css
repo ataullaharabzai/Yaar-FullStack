@@ -3844,6 +3844,30 @@ header {
       padding: 0 25px;
     }
 
+    /* Product add to card page design */
+
+    .restaurant-main-content {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .left-side-content {
+      width: 100%;
+    }
+
+    .list-popular-foods {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .food-card {
+      width: 100%;
+    }
+
+    .cart-card {
+      max-width: 75%;
+    }
+
 }
 
 @media (min-width: 1025px) {
