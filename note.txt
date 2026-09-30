@@ -16,7 +16,6 @@ Notifications
 =======
 home
 Notifications
-otp
 production in card
 profile
 recent search
