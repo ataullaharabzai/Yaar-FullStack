@@ -3802,11 +3802,19 @@ header {
     overflow-y: auto;
     z-index: 1000;
   }
+
+  .opacity {
+    z-index: 999;
+  }
 }
 
 @media (min-width: 1025px) {
   .mobile-nav {
     display: none;
+  }
+
+  .opacity {
+    z-index: 999;
   }
 
   .address-head {
