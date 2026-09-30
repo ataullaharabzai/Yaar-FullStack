@@ -3,8 +3,6 @@ add to card
 Cart
 choose delivery
 confirm order
-home filter
-home
 Notifications
 production in card
 profile
