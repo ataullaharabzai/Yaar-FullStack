@@ -1,4 +1,3 @@
-add to card
 Cart
 choose delivery
 confirm order
