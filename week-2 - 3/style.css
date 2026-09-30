@@ -3808,6 +3808,22 @@ header {
     height: 80px;
   }
 
+  /* Add to card page */
+
+  .menu-card {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    right: auto;
+    bottom: auto;
+    transform: translate(-50%, -50%);
+    width: min(90%, 560px);
+    max-height: calc(100vh - 32px);
+    margin: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    z-index: 1000;
+  }
 }
 
 @media (min-width: 1025px) {
