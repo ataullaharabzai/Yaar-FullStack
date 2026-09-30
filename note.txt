@@ -1,12 +1,16 @@
-PAGES THAT ARE DONE WITH RESPONSIVE DESIGN
-
-Create account
-login
-home
-otp
-recent-search
-restaurant
+Add address
 add to card
+Cart
 choose delivery
+confirm order
+create account
 home filter
+home
+login
 Notifications
+otp
+production in card
+profile
+recent search
+restaurant
+wallet
