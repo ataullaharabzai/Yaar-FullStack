@@ -1,16 +1,27 @@
-PAGES THAT ARE DONE WITH RESPONSIVE DESIGN
-
-Create account
-login
-home
-otp
-recent-search
-restaurant
+Add address
 add to card
+<<<<<<< HEAD
 <<<<<<< HEAD
 cart
 =======
+=======
+Cart
+>>>>>>> fd902c4 (signup page responsive add for Tablet.)
 choose delivery
+confirm order
+create account
 home filter
+<<<<<<< HEAD
 Notifications
 >>>>>>> responsive
+=======
+home
+login
+Notifications
+otp
+production in card
+profile
+recent search
+restaurant
+wallet
+>>>>>>> fd902c4 (signup page responsive add for Tablet.)

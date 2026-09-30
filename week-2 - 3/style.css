@@ -7,7 +7,7 @@
   --muted: #6b7280;
   --line: #e5e7eb;
   --danger: #dc2626;
-  --success: #16a34a;
+  --success: #16a34a; 
   --radius: 8px;
 }
 
@@ -3705,7 +3705,14 @@ header {
   }
 }
 
-@media (min-width: 1024px) {
+/* Responsive design for tablet */
+
+@media (min-width: 641px) and (max-width: 1024px) {
+  
+}
+
+
+@media (min-width: 1025px) {
   .mobile-nav {
     display: none;
   }
