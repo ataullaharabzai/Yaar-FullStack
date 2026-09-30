@@ -5,7 +5,6 @@ choose delivery
 confirm order
 home filter
 home
-login
 Notifications
 otp
 production in card
