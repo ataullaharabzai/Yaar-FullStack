@@ -7,7 +7,7 @@
   --muted: #6b7280;
   --line: #e5e7eb;
   --danger: #dc2626;
-  --success: #16a34a; 
+  --success: #16a34a;
   --radius: 8px;
 }
 
@@ -462,7 +462,7 @@ header {
 }
 
 .search-bar {
-  width: 580px;
+  width: 100%;
   height: 38px;
   display: flex;
   align-items: center;
@@ -3109,11 +3109,7 @@ header {
 
   /* Product add to card */
 
-  .restaurant-image {
-    display: none;
-  }
-
-  .mobile-nav {
+  .hero-img {
     display: none;
   }
 
@@ -3675,7 +3671,7 @@ header {
   .cancel-section {
     text-align: center;
     margin-top: 8px;
-    margin-bottom: 60px; 
+    margin-bottom: 60px;
   }
 
   .btn-cancel {
@@ -3705,12 +3701,97 @@ header {
 /* Responsive design for tablet */
 
 @media (min-width: 641px) and (max-width: 1024px) {
-  
-}
+  .mobile-nav {
+    display: none;
+  }
 
+  .nav {
+    gap: 8px;
+    padding: 10px clamp(8px, 1.5vw, 16px);
+  }
+
+  .nav .logo {
+    font-size: 1.3rem;
+  }
+
+  .location {
+    flex: 0 0 auto;
+    padding: 5px 8px;
+  }
+
+  .location p {
+    font-size: 0.6rem;
+    color: var(--muted);
+  }
+
+  .location span {
+    font-size: 0.8rem;
+  }
+
+  .nav .search-bar {
+    flex: 1 1 12rem;
+    min-width: 0;
+    width: auto;
+  }
+
+  .nav .search-bar input {
+    min-width: 0;
+  }
+
+  .search-bar .search-icon {
+    color: var(--muted);
+    font-size: 12px;
+  }
+
+  .search-bar input::placeholder {
+    font-size: 0.7rem;
+  }
+
+  .choose-lang {
+    display: none;
+  }
+
+  .view-card {
+    flex: 0 0 auto;
+    padding: 8px 10px;
+    gap: 6px;
+    font-size: 0.7rem;
+    white-space: nowrap;
+  }
+
+  .profile {
+    flex: 0 0 30px;
+    width: 30px;
+    height: 30px;
+    font-size: 0.7rem;
+    margin-right: 0;
+  }
+
+  .back-icon {
+    display: none;
+  }
+
+  .sort-dietary {
+    display: none;
+  }
+
+  .list-restaurants {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .restaurant-card {
+    width: 100%;
+  }
+
+}
 
 @media (min-width: 1025px) {
   .mobile-nav {
+    display: none;
+  }
+
+  .back-icon {
     display: none;
   }
 
@@ -3768,6 +3849,10 @@ header {
 
   .cart-card {
     max-width: 300px;
+  }
+
+  .search-bar {
+    max-width: 580px;
   }
 }
 }
