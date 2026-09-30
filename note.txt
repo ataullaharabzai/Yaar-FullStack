@@ -1,4 +1,3 @@
-profile
 recent search
 restaurant
 wallet

@@ -4094,6 +4094,77 @@ header {
     font-size: 1.2rem;
   }
 
+  /* Recent search page design */
+
+  .recent-search-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 10px;
+  }
+
+  .recent-back-btn, .slider {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg);
+    border-radius: 50%;
+  }
+
+  .recent-search-main {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .filter-btns {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .filter-btns p {
+    font-size: 0.8rem;
+    color: var(--muted);
+  }
+
+  .recent-search-btns {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .recent-search-btns div {
+    padding: 10px 15px;
+    background-color: var(--surface);
+    border-radius: 999px;
+  }
+
+  .recent-search-restaurants {
+    width: 100%;
+  }
+
+  .recent-search-restaurants p {
+    margin-bottom: 10px;
+  }
+
+  .searched-restaurants-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+  }
+
 }
 
 @media (min-width: 1025px) {
