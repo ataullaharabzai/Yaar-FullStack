@@ -2,6 +2,7 @@ const form = document.getElementById("form-list");
 const fullName = document.getElementById("fullname");
 const phone = document.getElementById("phone");
 const password = document.getElementById("password");
+const countryCode = document.getElementById('countryCode')
 
 // ------------ Create account page -------------
 form.addEventListener("submit", (e) => {
@@ -12,6 +13,21 @@ form.addEventListener("submit", (e) => {
     return;
   }
 
+  if (!Number(phone.value)) {
+    alert("Invalid phone number");
+    return;
+  }
+
+  if(phone.value.length < 9 || phone.value.length > 10) {
+    alert('Phone number invalid')
+    return
+  }
+
+  if(countryCode.value !== '+93') {
+    alert('Invalid country code number')
+    return;
+  }
+
   if (password.value.length < 8) {
     alert("Password must be at least 8 characters");
     return;
@@ -19,3 +35,6 @@ form.addEventListener("submit", (e) => {
 
   window.location.href = "home.html";
 });
+
+
+// -------------- Login page ----------------
