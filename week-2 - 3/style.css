@@ -325,6 +325,10 @@ form {
   color: var(--brand);
 }
 
+.guest-user:hover {
+  cursor: pointer;
+}
+
 .policy {
   text-align: center;
 }
