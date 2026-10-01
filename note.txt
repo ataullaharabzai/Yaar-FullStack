@@ -52,11 +52,16 @@ Registration page
 - Form should not be empty.
 - Password must be at least 8 char.
 - Create account button navigates to home page after validation true.
+- Phone number should be a Number.
+- Phone number should not be less than 9 or more than 10.
+- Only +93 country code is allow.
 
 
 Login page
 - Phone field should not be empty.
 - Only +93 code number is allow.
+- Phone number should be a Number.
+- Phone number should not be less than 9 or more than 10.
 - Continue as guest navigates to home page.
 - Create account button navigates to home page after validation true.
 >>>>>>> 4216b91 (Functionality add for signup page (New branch created))
