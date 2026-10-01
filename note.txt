@@ -1,1 +1,11 @@
-wallet
+Registration page 
+- Form should not be empty.
+- Password must be at least 8 char.
+- Create account button navigates to home page after validation true.
+
+
+Login page
+- Phone field should not be empty.
+- Only +93 code number is allow.
+- Continue as guest navigates to home page.
+- Create account button navigates to home page after validation true.
