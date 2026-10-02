@@ -371,7 +371,7 @@ form {
   width: 3.8rem;
   height: 3.4rem;
   border: 2px solid var(--line);
-  border-radius: var(--radius);
+  border-radius: var(--radius); 
   transition: all 0.15s ease-in;
   display: flex;
   justify-content: center;
@@ -589,7 +589,7 @@ header {
 /* Discount label */
 
 .discount-label {
-  margin: 30px 15px;
+  margin: 15px 15px;
   margin-bottom: 0;
   border: 1px solid black;
   padding: 25px;
@@ -631,13 +631,13 @@ header {
 /* Filter badges */
 
 .filter-box {
-  margin: 10px;
+  margin: 5px;
   display: flex;
   justify-content: start;
   align-items: center;
   gap: 5px;
   color: var(--muted);
-  padding: 15px 10px;
+  padding: 10px 10px;
   font-size: 0.8rem;
 }
 
@@ -660,8 +660,9 @@ header {
 .main-content {
   display: flex;
   justify-content: start;
-  align-items: start;
-  margin: 0 15px 0 15px;
+  align-items: flex-start;
+  margin: 0 10px 0 10px;
+  padding: 0 0 10px 0;
 }
 
 .sort-dietary {
@@ -669,9 +670,8 @@ header {
   justify-content: center;
   align-items: start;
   flex-direction: column;
-  margin-right: 5px;
   gap: 15px;
-  width: 30%;
+  width: 25%;
 }
 
 .sort {
@@ -721,7 +721,7 @@ header {
 }
 
 .restaurant-title {
-  width: 100%;
+  width: 85%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -740,15 +740,18 @@ header {
 
 .list-restaurants {
   width: 100%;
-  display: flex;
+  /* display: flex;
   justify-content: flex-start;
   align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: wrap; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 10px;
 }
 
 .restaurant-card {
-  width: 270px;
+  /* width: 270px; */
+  width: 100%;
   background: white;
   border-radius: 12px;
   overflow: hidden;
@@ -766,6 +769,11 @@ header {
   height: 100%;
   object-fit: cover;
   display: block;
+  transition: all .18s ease-in;
+}
+
+.restaurant-image img:hover {
+  transform: scale(1.05);
 }
 
 .favorite {
@@ -2500,6 +2508,8 @@ header {
 
   .list-restaurants {
     justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr;
   }
 
   .restaurant-card {
