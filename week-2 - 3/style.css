@@ -373,6 +373,10 @@ form {
   border: 2px solid var(--line);
   border-radius: var(--radius);
   transition: all 0.15s ease-in;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
 }
 
 .otp-boxs div:hover {
@@ -396,6 +400,14 @@ form {
   border: 1px solid var(--line);
   border-radius: var(--radius);
   background-color: var(--surface);
+}
+
+.otp-btns button:hover {
+  background-color: var(--line);
+}
+
+.otp-btns button:active {
+  transform: scale(0.96);
 }
 
 .verify-btn {

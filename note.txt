@@ -14,3 +14,14 @@ Login page
 - Phone number should not be less than 9 or more than 10.
 - Continue as guest navigates to home page.
 - Create account button navigates to home page after validation true.
+
+
+
+
+
+
+
+
+create account
+login page 
+otp page
