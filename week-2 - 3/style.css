@@ -4276,9 +4276,9 @@ header {
     display: none;
   }
 
-  .opacity {
-    z-index: 999;
-  }
+  /* .opacity {
+    z-index: 100;
+  } */
 
   .address-head {
     display: none;
