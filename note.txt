@@ -69,6 +69,13 @@ Login page
 =======
 
 
+OTP page
+- OTP boxes should not be empty.
+- OTP boxes should not be incomplete.
+- 3344 is valid OTP code otherwise invalid OTP code.
+- Verify button redirects to home page after correct OTP code.
+
+
 
 
 
