@@ -111,7 +111,7 @@ if (verifyBtn) {
 
     otpBoxes.forEach((box) => {
       box.textContent = "";
-    });
+    }); 
   });
 }
 
