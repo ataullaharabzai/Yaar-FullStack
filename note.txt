@@ -1,9 +1,12 @@
+<<<<<<< HEAD
 add to card
 <<<<<<< HEAD
 <<<<<<< HEAD
 cart
 =======
 =======
+=======
+>>>>>>> f42b98a (cart page responsive add for Tablet)
 Cart
 >>>>>>> fd902c4 (signup page responsive add for Tablet.)
 choose delivery
