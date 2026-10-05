@@ -127,6 +127,18 @@ body {
   margin-bottom: 0.4rem;
 }
 
+#login-btn {
+  font-size: 1rem;
+}
+
+#login-btn:hover {
+  background-color: var(--bg);
+}
+
+#login-btn:active {
+  transform: scale(.95);
+}
+
 .signup-title {
   display: flex;
   justify-content: center;
