@@ -95,4 +95,8 @@ otp page
 home
 home filter
 add address
+<<<<<<< HEAD
 >>>>>>> 0815964 (functionality add and UI improved)
+=======
+add to card
+>>>>>>> 1008a10 (UI improved and notes updated)
