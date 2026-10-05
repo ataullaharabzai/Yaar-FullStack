@@ -71,7 +71,11 @@ Login page
 =======
 =======
 - User phone number should be same with localStorage phone number.
+<<<<<<< HEAD
 >>>>>>> 9835e3d (login page functionality add)
+=======
+- User should be already registered to Continue.
+>>>>>>> 53dc75c ((create new element) functionality add and notes updated)
 
 
 OTP page
@@ -82,7 +86,6 @@ OTP page
 
 
 Add address page
-- Removes user data from localStorage and navigates to Login page while clicking on logout button.
 
 
 

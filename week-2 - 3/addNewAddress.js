@@ -10,22 +10,101 @@ addNewAddressBtn.addEventListener("click", () => {
 });
 
 saveNewAddressBtn.addEventListener("click", () => {
-  const newAddressElement = document.createElement("div");
-  newAddressElement.classList.add("newAddress");
+  const place = placeInput.value.trim();
+  const street = streetInput.value.trim();
 
-  const place = document.createElement("h3");
-  place.textContent = placeInput.value;
+  if (!place || !street) {
+    alert("Please fill both fields");
+    return;
+  }
 
-  const street = document.createElement("p");
-  street.textContent = streetInput.value;
+  const newAddress = {
+    id: Date.now(),
+    place: place,
+    street: street,
+  };
 
-  newAddressElement.appendChild(place);
-  newAddressElement.appendChild(street);
+  const addresses = JSON.parse(localStorage.getItem("addresses")) || [];
 
-  existingAddressContainer.append(newAddressElement);
+  addresses.push(newAddress);
 
-  JSON.stringify(localStorage.setItem("newAddress", placeInput.value));
+  localStorage.setItem("addresses", JSON.stringify(addresses));
 
-  placeInput.textContent = "";
-  streetInput.textContent = "";
+  createAddressCard(newAddress);
+
+  placeInput.value = "";
+  streetInput.value = "";
+
+  newAddressContainer.style.display = "none";
 });
+
+function createAddressCard(address) {
+  const addressCard = document.createElement("div");
+  addressCard.classList.add("address-card");
+
+  addressCard.innerHTML = `
+    <div class="address-card-header">
+      <div class="address-icon">
+        ${address.place.charAt(0).toUpperCase()}
+      </div>
+
+      <div class="address-title-wrapper">
+        <h3 class="address-title">${address.place}</h3>
+      </div>
+    </div>
+
+    <p class="address-details">
+      ${address.street}
+    </p>
+
+    <div class="address-card-actions">
+      <button
+        type="button"
+        class="btn btn-outline default-btn"
+      >
+        Set as default
+      </button>
+
+      <button
+        type="button"
+        class="btn btn-outline"
+      >
+        Edit
+      </button>
+
+        <button
+          type="button"
+          class="btn btn-outline remove">
+          Remove
+        </button>
+    </div>
+  `;
+
+  existingAddressContainer.appendChild(addressCard);
+
+  const removeBtn = document.querySelector(".remove");
+
+  removeBtn.addEventListener("click", () => {
+    const items = JSON.parse(localStorage.getItem("addresses"));
+    const filteredItem = items.filter((item) => item.id !== address.id);
+    localStorage.setItem("addresses", JSON.stringify(filteredItem));
+    addressCard.remove();
+    return;
+  });
+}
+
+const savedAddresses = JSON.parse(localStorage.getItem("addresses")) || [];
+
+savedAddresses.forEach((address) => {
+  createAddressCard(address);
+});
+
+
+// ------- logout ---------
+
+const logout = document.querySelector('.logout')
+
+logout.addEventListener('click', () => {
+    localStorage.removeItem('user')
+    window.location.href = 'createAccount.html'
+})
