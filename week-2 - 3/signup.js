@@ -52,6 +52,7 @@ if (signupForm) {
     }
 
     const newUser = {
+      id: Date.now(),
       name: fullName.value,
       phone: phone.value,
       email: email.value,
