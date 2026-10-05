@@ -64,4 +64,18 @@ Login page
 - Phone number should not be less than 9 or more than 10.
 - Continue as guest navigates to home page.
 - Create account button navigates to home page after validation true.
+<<<<<<< HEAD
 >>>>>>> 4216b91 (Functionality add for signup page (New branch created))
+=======
+
+
+
+
+
+
+
+
+create account
+login page 
+otp page
+>>>>>>> 715e9d5 (OTP box functionality add)
