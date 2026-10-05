@@ -5,6 +5,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 add to card
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -46,3 +47,16 @@ wallet
 =======
 wallet
 >>>>>>> 70a0b39 (wallet page responsive add for Tablet)
+=======
+Registration page 
+- Form should not be empty.
+- Password must be at least 8 char.
+- Create account button navigates to home page after validation true.
+
+
+Login page
+- Phone field should not be empty.
+- Only +93 code number is allow.
+- Continue as guest navigates to home page.
+- Create account button navigates to home page after validation true.
+>>>>>>> 4216b91 (Functionality add for signup page (New branch created))
