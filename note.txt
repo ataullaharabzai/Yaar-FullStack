@@ -2,6 +2,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 add to card
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -32,6 +33,8 @@ production in card
 =======
 >>>>>>> fb7c2aa (profile page responsive add for Tablet (little different with given UI))
 profile
+=======
+>>>>>>> c7ac99b (recent search page responsive add for Tablet)
 recent search
 restaurant
 wallet
