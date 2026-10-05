@@ -4243,6 +4243,13 @@ header {
   .restaurant-back-btn {
     display: none;
   }
+
+  /* Wallet page design */
+
+  .wallet-title {
+    display: none;
+  }
+
 }
 
 @media (min-width: 1025px) {

@@ -4,6 +4,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 add to card
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -42,3 +43,6 @@ recent search
 restaurant
 wallet
 >>>>>>> fd902c4 (signup page responsive add for Tablet.)
+=======
+wallet
+>>>>>>> 70a0b39 (wallet page responsive add for Tablet)
