@@ -1594,7 +1594,7 @@ header {
   border: none;
   outline: none;
   color: var(--danger);
-  background-color: rgba(255, 0, 0, 0.174);
+  background-color: rgba(255, 0, 0, 0.1);
   font-size: 0.8rem;
   font-weight: 600;
   cursor: pointer;
@@ -1635,6 +1635,7 @@ header {
 
 .address-card.default {
   border: 1px solid var(--line);
+  width: 100%;
 }
 
 .address-card-header {
@@ -1714,8 +1715,8 @@ header {
 }
 
 .default-btn {
-  background-color: #036aa141;
-  color: #0369a1;
+  background-color: #036aa114;
+  color: var(--brand);
   border-radius: 999px;
 }
 
@@ -3784,10 +3785,34 @@ header {
     width: 100%;
   }
 
+  /* Add address page */
+
+  .address-head {
+    display: none;
+  }
+
+  .wallet-main-page {
+    display: grid;
+    grid-template-columns: 30% 70%;
+  }
+
+  .left-side-user-info {
+    width: 100%;
+  }
+
+  .user-profile img {
+    width: 80px;
+    height: 80px;
+  }
+
 }
 
 @media (min-width: 1025px) {
   .mobile-nav {
+    display: none;
+  }
+
+  .address-head {
     display: none;
   }
 
