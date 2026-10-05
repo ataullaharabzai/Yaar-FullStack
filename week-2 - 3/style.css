@@ -1755,19 +1755,19 @@ header {
 .checkout-layout {
   width: 100%;
   display: flex;
-  gap: 15px;
   align-items: start;
+  gap: 15px;
 }
 
 .checkout-left {
-  width: 75%;
+  width: 70%;
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
 .checkout-right {
-  width: 25%;
+  width: 30%;
 }
 
 .checkout-card {
@@ -3828,10 +3828,45 @@ header {
   .opacity {
     z-index: 999;
   }
+
+  /* Cart page design */
+
+  .cart-head-mobile {
+    display: none;
+  }
+
+  .checkout-left {
+    width: 60%;
+  }
+
+  .checkout-right {
+    width: 40%;
+  }
+
+  .checkout-row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .checkout-card {
+    width: 100%;
+  }
+
+  .cart-order-btn {
+    display: none;
+  }
 }
 
 @media (min-width: 1025px) {
   .mobile-nav {
+    display: none;
+  }
+
+  .cart-order-btn {
+    display: none;
+  }
+
+  .cart-head-mobile {
     display: none;
   }
 
