@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 add to card
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -24,6 +25,8 @@ home
 =======
 >>>>>>> 1237541 (notification page responsive add for Tablet)
 Notifications
+=======
+>>>>>>> d31d9a9 (product add in card page responsive for Tablet)
 production in card
 profile
 recent search
