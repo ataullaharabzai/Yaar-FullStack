@@ -3,6 +3,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 add to card
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -36,6 +37,8 @@ profile
 =======
 >>>>>>> c7ac99b (recent search page responsive add for Tablet)
 recent search
+=======
+>>>>>>> cdf3487 (restaurant page responsive add for Tablet and and bug fixed in mobile screen)
 restaurant
 wallet
 >>>>>>> fd902c4 (signup page responsive add for Tablet.)
