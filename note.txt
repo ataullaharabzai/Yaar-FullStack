@@ -7,10 +7,7 @@ otp
 recent-search
 restaurant
 add to card
-<<<<<<< HEAD
 cart
-=======
 choose delivery
 home filter
 Notifications
->>>>>>> responsive
