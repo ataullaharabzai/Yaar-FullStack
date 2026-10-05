@@ -76,6 +76,10 @@ OTP page
 - Verify button redirects to home page after correct OTP code.
 
 
+Add address page
+- Navigate to Login page while clicking on logout button.
+
+
 
 
 
@@ -85,4 +89,10 @@ OTP page
 create account
 login page 
 otp page
+<<<<<<< HEAD
 >>>>>>> 715e9d5 (OTP box functionality add)
+=======
+home
+home filter
+add address
+>>>>>>> 0815964 (functionality add and UI improved)

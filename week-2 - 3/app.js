@@ -114,3 +114,14 @@ if (verifyBtn) {
     });
   });
 }
+
+
+// ---------- Add address page -----------------
+
+const logout = document.querySelector('.logout')
+
+if(logout) {
+  logout.addEventListener('click', () => {
+    window.location.href = 'login.html'
+  })
+}
