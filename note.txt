@@ -1,6 +1,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 add to card
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -28,6 +29,8 @@ Notifications
 =======
 >>>>>>> d31d9a9 (product add in card page responsive for Tablet)
 production in card
+=======
+>>>>>>> fb7c2aa (profile page responsive add for Tablet (little different with given UI))
 profile
 recent search
 restaurant
