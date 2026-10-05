@@ -86,7 +86,9 @@ OTP page
 
 
 Add address page
-
+- Add new address and store it to localStorage.
+- Remove new address from UI and localStorage.
+- Logout button remove user data from localStorage and navigates to signup page.
 
 
 
