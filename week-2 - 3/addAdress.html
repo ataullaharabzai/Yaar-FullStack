@@ -18,6 +18,32 @@
     <!-- Navbar -->
     <header>
       <!-- Navbar head -->
+
+      <!-- Mobile view -->
+
+      <div class="mobile-nav">
+        <div class="mobile-nav-top">
+          <div class="location">
+            <p>DELIVER TO</p>
+            <span>Home</span>
+          </div>
+          <div class="nav-icons">
+            <div class="notification">
+              <i class="fa-solid fa-bell"></i>
+            </div>
+            <div class="notification ckeckout-icon">
+              <i class="fa-solid fa-cart-arrow-down"></i>
+            </div>
+          </div>
+        </div>
+        <div class="mobile-nav-bottom">
+          <div class="search-bar">
+            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+            <input type="text" placeholder="Search restaurants and meals" />
+          </div>
+        </div>
+      </div>
+
       <div class="nav">
         <div class="logo">
           <p>Ghiza</p>
@@ -34,22 +60,25 @@
           <span>English</span>
           <p>Pashto</p>
         </div>
-        <div class="notification">
-          <i class="fa-regular fa-bell"></i>
+        <a href="notification.html" class="notification">
+          <i class="fa-solid fa-bell"></i>
+        </a>
+        <div class="notification ckeckout-icon">
+          <i class="fa-solid fa-cart-arrow-down"></i>
         </div>
-        <div class="view-card">
+        <a href="cart.html" class="view-card">
           <p>View cart</p>
           <span>0</span>
-        </div>
-        <div class="profile">
+        </a>
+        <a href="profile.html" class="profile">
           <p>A</p>
-        </div>
+        </a>
       </div>
 
       <!-- Navbar routing panel -->
       <div class="routing-panel">
         <ul>
-          <li><a href="#">Browse</a></li>
+          <li><a href="home.html">Browse</a></li>
           <li><a href="order.html">Orders</a></li>
           <li><a href="favorite.html">Favorites</a></li>
           <li><a href="wallet.html">Wallet</a></li>
@@ -84,7 +113,14 @@
 
       <!-- right side -->
       <div class="addresses">
-        <h2>Address</h2>
+        <div class="address-head">
+          <div class="address-title-icon">
+            <i class="fa-solid fa-angle-left"></i>
+          </div>
+          <h2>Address</h2>
+        </div>
+
+        <h2 class="address-main-title">Address</h2>
         <div>
           <div class="address-cards">
             <div class="address-card default">
@@ -114,9 +150,9 @@
 
             <div class="address-card default">
               <div class="address-card-header">
-                <div class="address-icon">H</div>
+                <div class="address-icon">O</div>
                 <div class="address-title-wrapper">
-                  <h3 class="address-title">Home</h3>
+                  <h3 class="address-title">Office</h3>
                   <span class="badge badge-default">DEFAULT</span>
                 </div>
               </div>
@@ -141,13 +177,13 @@
               <div class="address-card-header">
                 <div class="address-icon">H</div>
                 <div class="address-title-wrapper">
-                  <h3 class="address-title">Home</h3>
+                  <h3 class="address-title">Hostel</h3>
                   <span class="badge badge-default">DEFAULT</span>
                 </div>
               </div>
 
               <p class="address-details">
-                Lane 4, Shar-e-Naw, Kabul - second floor, bell 3
+                Lane 4, Kair-Khana, Kabul - second floor, bell 3
               </p>
 
               <div class="address-card-actions">
@@ -161,10 +197,12 @@
                 <button type="button" class="btn btn-outline">Edit</button>
               </div>
             </div>
+            <button class="new-address-btn">+ Add new Address</button>
           </div>
         </div>
-        <button class="new-address-btn">+ Add new Address</button>
       </div>
     </section>
+
+    <script src="app.js"></script>
   </body>
 </html>

@@ -9,15 +9,19 @@
       src="https://kit.fontawesome.com/94f1987ab9.js"
       crossorigin="anonymous"
     ></script>
-    <link
+    <link 
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
   </head> 
   <body>
 
-    <!-- Mobile navbar -->
-    <div class="mobile-nav">
+    <header>
+      <!-- Navbar head -->
+
+      <!-- Mobile view -->
+
+      <div class="mobile-nav">
         <div class="mobile-nav-top">
           <div class="location">
           <p>DELIVER TO</p>
@@ -40,8 +44,6 @@
         </div>
       </div>
 
-    <header>
-      <!-- Navbar head -->
       <div class="nav">
         <div class="logo">
           <p>Ghiza</p>
@@ -58,22 +60,25 @@
           <span>English</span>
           <p>Pashto</p>
         </div>
-        <div class="notification">
-          <i class="fa-regular fa-bell"></i>
+        <a href="notification.html" class="notification">
+          <i class="fa-solid fa-bell"></i>
+        </a>
+        <div class="notification ckeckout-icon">
+          <i class="fa-solid fa-cart-arrow-down"></i>
         </div>
-        <div class="view-card">
+        <a href="cart.html" class="view-card">
           <p>View cart</p>
           <span>0</span>
-        </div>
-        <div class="profile">
+        </a>
+        <a href="profile.html" class="profile">
           <p>A</p>
-        </div>
+        </a>
       </div>
 
       <!-- Navbar routing panel -->
       <div class="routing-panel">
         <ul>
-          <li><a href="#">Browse</a></li>
+          <li><a href="home.html">Browse</a></li>
           <li><a href="order.html">Orders</a></li>
           <li><a href="favorite.html">Favorites</a></li>
           <li><a href="wallet.html">Wallet</a></li>
