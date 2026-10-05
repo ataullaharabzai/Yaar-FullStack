@@ -3136,6 +3136,7 @@ header {
   }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   .your-cart-title {
     width: 100%;
     background-color: var(--surface);
@@ -3148,6 +3149,59 @@ header {
 
   .your-cart-icon {
 =======
+=======
+  .restaurant-page .hero-img {
+    display: block;
+    height: 240px;
+    min-height: 0;
+  }
+
+  .restaurant-page .restaurant-main-content {
+    display: block;
+    margin: 0;
+    padding: 0 12px 24px;
+  }
+
+  .restaurant-page .left-side-content {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .restaurant-page .popular-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: 16px 5px 10px;
+  }
+
+  .restaurant-page .list-popular-foods {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 10px;
+  }
+
+  .restaurant-page .food-card {
+    width: 100%;
+    min-width: 0;
+    gap: 8px;
+    padding: 12px;
+  }
+
+  .restaurant-page .card-content {
+    min-width: 0;
+    padding-right: 4px;
+  }
+
+  .restaurant-page .food-title {
+    font-size: 14px;
+  }
+
+  .restaurant-page .image-container {
+    width: 76px;
+    height: 76px;
+  }
+
+>>>>>>> cdf3487 (restaurant page responsive add for Tablet and and bug fixed in mobile screen)
   /* Wallet page design */
 
   .wallet-header {
@@ -4126,7 +4180,8 @@ header {
     gap: 10px;
   }
 
-  .recent-back-btn, .slider {
+  .recent-back-btn,
+  .slider {
     width: 44px;
     height: 44px;
     display: flex;
@@ -4187,6 +4242,13 @@ header {
     gap: 10px;
   }
 
+  /* Restaurant page design */
+
+  .hero-info-mobile,
+  .delivery-pickup-box,
+  .restaurant-back-btn {
+    display: none;
+  }
 }
 
 @media (min-width: 1025px) {
