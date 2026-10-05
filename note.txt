@@ -9,12 +9,15 @@ Cart
 >>>>>>> fd902c4 (signup page responsive add for Tablet.)
 choose delivery
 confirm order
+<<<<<<< HEAD
 home filter
 <<<<<<< HEAD
 Notifications
 >>>>>>> responsive
 =======
 home
+=======
+>>>>>>> 944fac5 (add address page responsive add for Tablet)
 Notifications
 production in card
 profile
