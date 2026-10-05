@@ -3855,12 +3855,27 @@ header {
   .cart-order-btn {
     display: none;
   }
+
+    /*Notification page design  */
+
+    .notification-title {
+      display: none;
+    }
+
+    .notification-container {
+      padding: 0 25px;
+    }
+
 }
 
 @media (min-width: 1025px) {
   .mobile-nav {
     display: none;
   }
+
+  .notification-title {
+      display: none;
+    }
 
   .cart-order-btn {
     display: none;

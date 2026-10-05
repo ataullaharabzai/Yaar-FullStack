@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 add to card
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -20,6 +21,8 @@ Notifications
 home
 =======
 >>>>>>> 944fac5 (add address page responsive add for Tablet)
+=======
+>>>>>>> 1237541 (notification page responsive add for Tablet)
 Notifications
 production in card
 profile
