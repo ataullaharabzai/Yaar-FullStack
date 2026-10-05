@@ -10,11 +10,15 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/94f1987ab9.js"
+      crossorigin="anonymous"
+    ></script>
 
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <main class="login-page"> 
+    <main class="login-page">
       <!-- left side -->
       <section class="signup-info login-info">
         <div class="info-content">
@@ -44,12 +48,17 @@
             </p>
           </div>
 
-          <form>
+          <form id="login-form">
             <!-- phone -->
             <div class="form-group">
               <label for="phone">PHONE NUMBER</label>
               <div class="phone-input">
-                <input type="text" class="country-code" value="+93" />
+                <input
+                  type="text"
+                  id="countryCode"
+                  class="country-code"
+                  value="+93"
+                />
                 <input type="tel" id="phone" placeholder="70 0000000" />
               </div>
             </div>
@@ -68,8 +77,9 @@
             </button>
 
             <!-- submit -->
-            <button type="submit" class="create-an-btn">
-              Create an account
+            <button type="submit" id="login-btn" class="create-an-btn">
+              Login
+              <i class="fa-solid fa-arrow-right-to-bracket"></i>
             </button>
 
             <p class="guest-user">Continue as guest</p>
@@ -83,5 +93,7 @@
         </div>
       </section>
     </main>
+
+    <script src="login.js"></script>
   </body>
 </html>

@@ -127,6 +127,18 @@ body {
   margin-bottom: 0.4rem;
 }
 
+#login-btn {
+  font-size: 1rem;
+}
+
+#login-btn:hover {
+  background-color: var(--bg);
+}
+
+#login-btn:active {
+  transform: scale(0.95);
+}
+
 .signup-title {
   display: flex;
   justify-content: center;
@@ -325,6 +337,10 @@ form {
   color: var(--brand);
 }
 
+.guest-user:hover {
+  cursor: pointer;
+}
+
 .policy {
   text-align: center;
 }
@@ -369,6 +385,10 @@ form {
   border: 2px solid var(--line);
   border-radius: var(--radius);
   transition: all 0.15s ease-in;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
 }
 
 .otp-boxs div:hover {
@@ -392,6 +412,14 @@ form {
   border: 1px solid var(--line);
   border-radius: var(--radius);
   background-color: var(--surface);
+}
+
+.otp-btns button:hover {
+  background-color: var(--line);
+}
+
+.otp-btns button:active {
+  transform: scale(0.96);
 }
 
 .verify-btn {
@@ -573,7 +601,7 @@ header {
 /* Discount label */
 
 .discount-label {
-  margin: 30px 15px;
+  margin: 15px 15px;
   margin-bottom: 0;
   border: 1px solid black;
   padding: 25px;
@@ -615,13 +643,13 @@ header {
 /* Filter badges */
 
 .filter-box {
-  margin: 10px;
+  margin: 5px;
   display: flex;
   justify-content: start;
   align-items: center;
   gap: 5px;
   color: var(--muted);
-  padding: 15px 10px;
+  padding: 10px 10px;
   font-size: 0.8rem;
 }
 
@@ -644,8 +672,9 @@ header {
 .main-content {
   display: flex;
   justify-content: start;
-  align-items: start;
-  margin: 0 15px 0 15px;
+  align-items: flex-start;
+  margin: 0 10px 0 10px;
+  padding: 0 0 10px 0;
 }
 
 .sort-dietary {
@@ -653,9 +682,8 @@ header {
   justify-content: center;
   align-items: start;
   flex-direction: column;
-  margin-right: 5px;
   gap: 15px;
-  width: 30%;
+  width: 25%;
 }
 
 .sort {
@@ -705,7 +733,7 @@ header {
 }
 
 .restaurant-title {
-  width: 100%;
+  width: 85%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -724,15 +752,18 @@ header {
 
 .list-restaurants {
   width: 100%;
-  display: flex;
+  /* display: flex;
   justify-content: flex-start;
   align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: wrap; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 10px;
 }
 
 .restaurant-card {
-  width: 270px;
+  /* width: 270px; */
+  width: 100%;
   background: white;
   border-radius: 12px;
   overflow: hidden;
@@ -750,6 +781,11 @@ header {
   height: 100%;
   object-fit: cover;
   display: block;
+  transition: all 0.18s ease-in;
+}
+
+.restaurant-image img:hover {
+  transform: scale(1.05);
 }
 
 .favorite {
@@ -1731,6 +1767,100 @@ header {
   font-weight: bold;
 }
 
+.new-address-inputs {
+  width: min(calc(100% - 30px), 900px);
+  margin: 10px auto 40px;
+  display: flex;
+  justify-content: flex-end;
+  display: none;
+}
+
+.new-address-form {
+  width: min(100%, 680px);
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+
+.new-address-title {
+  grid-column: 1 / -1;
+  color: var(--text);
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.address-form-field {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.address-form-field-full {
+  grid-column: 1 / -1;
+}
+
+.address-form-field label {
+  color: var(--muted);
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.address-form-field input {
+  width: 100%;
+  min-width: 0;
+  min-height: 44px;
+  padding: 10px 12px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  color: var(--text);
+  font: inherit;
+  font-size: 0.875rem;
+}
+
+.address-form-field input::placeholder {
+  color: #9ca3af;
+}
+
+.address-form-field input:focus {
+  outline: 2px solid #0d5c8c33;
+  border-color: var(--brand);
+}
+
+.save-new-address-btn {
+  grid-column: 1 / -1;
+  justify-self: end;
+  min-height: 42px;
+  padding: 0 22px;
+  border: 0;
+  border-radius: var(--radius);
+  background: var(--brand);
+  color: var(--surface);
+  font: inherit;
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.save-new-address-btn:hover {
+  background: var(--brand-dark);
+}
+
+.address-card {
+  width: 100%;
+}
+
+.remove:hover {
+  background-color: rgba(255, 0, 0, 0.077);
+  color: var(--danger);
+  border: 1px solid var(--danger);
+}
+
 /* Cart page designing */
 
 .checkout-page {
@@ -2484,6 +2614,8 @@ header {
 
   .list-restaurants {
     justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr;
   }
 
   .restaurant-card {
@@ -3148,8 +3280,11 @@ header {
   }
 
   .your-cart-icon {
+<<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> functionality
   .restaurant-page .hero-img {
     display: block;
     height: 240px;
@@ -3201,7 +3336,10 @@ header {
     height: 76px;
   }
 
+<<<<<<< HEAD
 >>>>>>> cdf3487 (restaurant page responsive add for Tablet and and bug fixed in mobile screen)
+=======
+>>>>>>> functionality
   /* Wallet page design */
 
   .wallet-header {
@@ -3286,7 +3424,10 @@ header {
   }
 
   .wallet-icon {
+<<<<<<< HEAD
 >>>>>>> b4ae787 (wallet page responsive add)
+=======
+>>>>>>> functionality
     width: 44px;
     height: 44px;
     display: flex;
@@ -3300,6 +3441,25 @@ header {
     width: 100%;
   }
 
+<<<<<<< HEAD
+=======
+  .new-address-inputs {
+    width: 100%;
+    padding: 0 15px;
+  }
+
+  .new-address-form {
+    width: 100%;
+    grid-template-columns: minmax(0, 1fr);
+    padding: 16px;
+    gap: 14px;
+  }
+
+  .save-new-address-btn {
+    justify-self: stretch;
+  }
+
+>>>>>>> functionality
   .address-main-title {
     display: none;
   }
@@ -4255,7 +4415,10 @@ header {
   .wallet-title {
     display: none;
   }
+<<<<<<< HEAD
 
+=======
+>>>>>>> functionality
 }
 
 @media (min-width: 1025px) {
@@ -4275,9 +4438,15 @@ header {
     display: none;
   }
 
+<<<<<<< HEAD
   .opacity {
     z-index: 999;
   }
+=======
+  /* .opacity {
+    z-index: 100;
+  } */
+>>>>>>> functionality
 
   .address-head {
     display: none;
@@ -4346,4 +4515,5 @@ header {
   .search-bar {
     max-width: 580px;
   }
+}
 }
