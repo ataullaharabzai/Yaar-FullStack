@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Registration page 
 - Form should not be empty.
 - Password must be at least 8 char.
@@ -40,3 +41,117 @@ home
 home filter
 add address
 add to card
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+add to card
+<<<<<<< HEAD
+<<<<<<< HEAD
+cart
+=======
+=======
+=======
+>>>>>>> f42b98a (cart page responsive add for Tablet)
+Cart
+>>>>>>> fd902c4 (signup page responsive add for Tablet.)
+choose delivery
+confirm order
+<<<<<<< HEAD
+home filter
+<<<<<<< HEAD
+Notifications
+>>>>>>> responsive
+=======
+home
+=======
+>>>>>>> 944fac5 (add address page responsive add for Tablet)
+=======
+>>>>>>> 1237541 (notification page responsive add for Tablet)
+Notifications
+=======
+>>>>>>> d31d9a9 (product add in card page responsive for Tablet)
+production in card
+=======
+>>>>>>> fb7c2aa (profile page responsive add for Tablet (little different with given UI))
+profile
+=======
+>>>>>>> c7ac99b (recent search page responsive add for Tablet)
+recent search
+=======
+>>>>>>> cdf3487 (restaurant page responsive add for Tablet and and bug fixed in mobile screen)
+restaurant
+wallet
+>>>>>>> fd902c4 (signup page responsive add for Tablet.)
+=======
+wallet
+>>>>>>> 70a0b39 (wallet page responsive add for Tablet)
+=======
+Registration page 
+- Form should not be empty.
+- Password must be at least 8 char.
+- Create account button navigates to home page after validation true.
+- User data stores in localStorage.
+- Phone number should be a Number.
+- Phone number should not be less than 9 or more than 10.
+- Only +93 country code is allow.
+
+
+Login page
+- Phone field should not be empty.
+- Only +93 code number is allow.
+- Phone number should be a Number.
+- Phone number should not be less than 9 or more than 10.
+- Continue as guest navigates to home page.
+- Create account button navigates to home page after validation true.
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 4216b91 (Functionality add for signup page (New branch created))
+=======
+=======
+- User phone number should be same with localStorage phone number.
+<<<<<<< HEAD
+>>>>>>> 9835e3d (login page functionality add)
+=======
+- User should be already registered to Continue.
+>>>>>>> 53dc75c ((create new element) functionality add and notes updated)
+
+
+OTP page
+- OTP boxes should not be empty.
+- OTP boxes should not be incomplete.
+- 3344 is valid OTP code otherwise invalid OTP code.
+- Verify button redirects to home page after correct OTP code.
+
+
+Add address page
+- Add new address and store it to localStorage.
+- Remove new address from UI and localStorage.
+- Logout button remove user data from localStorage and navigates to signup page.
+
+
+
+
+
+
+
+create account
+login page 
+otp page
+<<<<<<< HEAD
+>>>>>>> 715e9d5 (OTP box functionality add)
+=======
+home
+home filter
+add address
+<<<<<<< HEAD
+>>>>>>> 0815964 (functionality add and UI improved)
+=======
+add to card
+>>>>>>> 1008a10 (UI improved and notes updated)
+>>>>>>> 47244fe48a42d4bf8eee8c6a17039547a2721da6
