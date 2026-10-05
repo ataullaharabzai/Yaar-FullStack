@@ -127,6 +127,18 @@ body {
   margin-bottom: 0.4rem;
 }
 
+#login-btn {
+  font-size: 1rem;
+}
+
+#login-btn:hover {
+  background-color: var(--bg);
+}
+
+#login-btn:active {
+  transform: scale(0.95);
+}
+
 .signup-title {
   display: flex;
   justify-content: center;
@@ -769,7 +781,7 @@ header {
   height: 100%;
   object-fit: cover;
   display: block;
-  transition: all .18s ease-in;
+  transition: all 0.18s ease-in;
 }
 
 .restaurant-image img:hover {
@@ -1753,6 +1765,100 @@ header {
   background-color: var(--surface);
   color: var(--brand);
   font-weight: bold;
+}
+
+.new-address-inputs {
+  width: min(calc(100% - 30px), 900px);
+  margin: 10px auto 40px;
+  display: flex;
+  justify-content: flex-end;
+  display: none;
+}
+
+.new-address-form {
+  width: min(100%, 680px);
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+
+.new-address-title {
+  grid-column: 1 / -1;
+  color: var(--text);
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.address-form-field {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.address-form-field-full {
+  grid-column: 1 / -1;
+}
+
+.address-form-field label {
+  color: var(--muted);
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.address-form-field input {
+  width: 100%;
+  min-width: 0;
+  min-height: 44px;
+  padding: 10px 12px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  color: var(--text);
+  font: inherit;
+  font-size: 0.875rem;
+}
+
+.address-form-field input::placeholder {
+  color: #9ca3af;
+}
+
+.address-form-field input:focus {
+  outline: 2px solid #0d5c8c33;
+  border-color: var(--brand);
+}
+
+.save-new-address-btn {
+  grid-column: 1 / -1;
+  justify-self: end;
+  min-height: 42px;
+  padding: 0 22px;
+  border: 0;
+  border-radius: var(--radius);
+  background: var(--brand);
+  color: var(--surface);
+  font: inherit;
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.save-new-address-btn:hover {
+  background: var(--brand-dark);
+}
+
+.address-card {
+  width: 100%;
+}
+
+.remove:hover {
+  background-color: rgba(255, 0, 0, 0.077);
+  color: var(--danger);
+  border: 1px solid var(--danger);
 }
 
 /* Cart page designing */
@@ -3318,6 +3424,22 @@ header {
 
   .addresses {
     width: 100%;
+  }
+
+  .new-address-inputs {
+    width: 100%;
+    padding: 0 15px;
+  }
+
+  .new-address-form {
+    width: 100%;
+    grid-template-columns: minmax(0, 1fr);
+    padding: 16px;
+    gap: 14px;
+  }
+
+  .save-new-address-btn {
+    justify-self: stretch;
   }
 
   .address-main-title {
