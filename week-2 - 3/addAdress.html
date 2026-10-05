@@ -203,6 +203,32 @@
       </div>
     </section>
 
-    <script src="app.js"></script>
+    <!-- Input fields to add a new address -->
+    <section class="new-address-inputs">
+      <div class="new-address-form">
+        <h3 class="new-address-title" id="new-address-title">
+          Add a new address
+        </h3>
+        <div class="address-form-field">
+          <label for="address-place">Place</label>
+          <input
+            id="address-place"
+            type="text"
+            placeholder="Ex. Home, Office"
+          />
+        </div>
+        <div class="address-form-field address-form-field-full">
+          <label for="street-address">Address</label>
+          <input
+            id="street-address"
+            type="text"
+            placeholder="Ex. Street 4, bell 3"
+          />
+        </div>
+        <button type="button" class="save-new-address-btn">Save address</button>
+      </div>
+    </section>
+
+    <script src="addNewAddress.js"></script>
   </body>
 </html>
