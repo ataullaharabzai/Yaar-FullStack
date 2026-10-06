@@ -3,48 +3,26 @@ const checkoutLength = document.querySelector(".checkout-length");
 const checkoutItems = document.querySelector(".checkout-items");
 const checkoutTotal = document.querySelector(".checkout-total-price");
 const emptyCardTitle = document.querySelector(".empty-card-title");
-const emptyCardDescription = document.querySelector(".empty-card-dec");
+const emptyCardDescription = document.querySelector(".empty-card-des");
 
 // -------------------------Restaurant page---------------------------------
 // The food list part in restaurant page (left side)
-let carts = [];
 
-addBtns.forEach((button) => {
-  button.addEventListener("click", () => {
-    const foodCard = button.closest(".food-card");
+let carts = JSON.parse(localStorage.getItem("cart")) || [];
+// console.log("loaded: ", carts)
 
-    const id = foodCard.dataset.id;
-    const name = foodCard.dataset.name;
-    const price = Number(foodCard.dataset.price);
-
-    const existingFood = carts.find((food) => food.id === id);
-
-    if (existingFood) {
-      existingFood.quantity++;
-    } else {
-      carts.push({
-        id,
-        name,
-        price,
-        quantity: 1,
-      });
-    }
-    console.log(carts);
-
-    listMealInCheckoutCard();
-  });
-});
-
-// the checkout cart part in restaurant page (right side)
-
-function listMealInCheckoutCard() {
+const renderCards = () => {
   checkoutItems.innerHTML = "";
-//   emptyCardTitle.innerHTML = "";
-//   emptyCardDescription.innerHTML = "";
 
   checkoutLength.textContent = carts.length;
+  emptyCardTitle.style.display = carts.length ? "none" : "block";
+  emptyCardDescription.style.display = carts.length ? "none" : "block";
+
+  let total = 0;
 
   carts.forEach((food) => {
+    total += food.price * food.quantity;
+
     const item = document.createElement("div");
     item.classList.add("checkout-item");
 
@@ -66,19 +44,33 @@ function listMealInCheckoutCard() {
     `;
 
     checkoutItems.appendChild(item);
-
+    // console.log(food)
   });
 
-  calculateTotal();
-}
-
-// calculate the final price
-const calculateTotal = () => {
-  let total = 0;
-
-  carts.forEach((cart) => {
-    total += cart.price * cart.quantity;
-  });
-
-  checkoutTotal.textContent = `AFG${total}`;
+  checkoutTotal.textContent = `Total: ${total}`;
+  localStorage.setItem("cart", JSON.stringify(carts));
 };
+
+renderCards();
+
+addBtns.forEach((button) => {
+  button.addEventListener("click", () => {
+    const foodCard = button.closest(".food-card");
+
+    const id = foodCard.dataset.id;
+    const name = foodCard.dataset.name;
+    const price = Number(foodCard.dataset.price);
+
+    carts.push({
+      id,
+      name,
+      price,
+      quantity: 1,
+    });
+
+    console.log(carts);
+
+    renderCards();
+  });
+});
+
