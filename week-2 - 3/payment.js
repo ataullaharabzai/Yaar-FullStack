@@ -1,0 +1,76 @@
+const addBtns = document.querySelectorAll(".add-btn");
+const checkoutLength = document.querySelector(".checkout-length");
+const checkoutItems = document.querySelector(".checkout-items");
+const checkoutTotal = document.querySelector(".checkout-total-price");
+const emptyCardTitle = document.querySelector(".empty-card-title");
+const emptyCardDescription = document.querySelector(".empty-card-des");
+
+// -------------------------Restaurant page---------------------------------
+// The food list part in restaurant page (left side)
+
+let carts = JSON.parse(localStorage.getItem("cart")) || [];
+// console.log("loaded: ", carts)
+
+const renderCards = () => {
+  checkoutItems.innerHTML = "";
+
+  checkoutLength.textContent = carts.length;
+  emptyCardTitle.style.display = carts.length ? "none" : "block";
+  emptyCardDescription.style.display = carts.length ? "none" : "block";
+
+  let total = 0;
+
+  carts.forEach((food) => {
+    total += food.price * food.quantity;
+
+    const item = document.createElement("div");
+    item.classList.add("checkout-item");
+
+    item.innerHTML = `
+      <div>
+        <h4>${food.name}</h4>
+        <p>AFN ${food.price}</p>
+      </div>
+
+      <div>
+        <button class="fill-checkout-remove" data-id="${food.id}">
+          Remove
+        </button>
+        <button class="fill-checkout-plus" data-id="${food.id}">
+          +
+        </button>
+        <span>${food.quantity}</span>
+      </div>
+    `;
+
+    checkoutItems.appendChild(item);
+    // console.log(food)
+  });
+
+  checkoutTotal.textContent = `Total: ${total}`;
+  localStorage.setItem("cart", JSON.stringify(carts));
+};
+
+renderCards();
+
+addBtns.forEach((button) => {
+  button.addEventListener("click", () => {
+    const foodCard = button.closest(".food-card");
+
+    const id = foodCard.dataset.id;
+    const name = foodCard.dataset.name;
+    const price = Number(foodCard.dataset.price);
+
+    carts.push({
+      id,
+      name,
+      price,
+      quantity: 1,
+    });
+
+    console.log(carts);
+
+    renderCards();
+  });
+});
+
