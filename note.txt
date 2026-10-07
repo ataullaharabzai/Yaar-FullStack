@@ -26,6 +26,12 @@ OTP page
 
 Add address page
 - Navigate to Login page while clicking on logout button.
+- Removes user data from localStorage.
+- New address can be added.
+- New address data stores in the localStorage.
+
+
+Restaurant
 
 
 

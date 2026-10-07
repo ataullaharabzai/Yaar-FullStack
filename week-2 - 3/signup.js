@@ -27,7 +27,6 @@ const phoneValidation = () => {
     return;
   }
 
-  //   window.location.href = "home.html";
   return true;
 };
 
@@ -41,7 +40,7 @@ if (signupForm) {
         !phone.value.trim() ||
         !password.value.trim()
       ) {
-        alert("Enter your email or phone number");
+        alert("Enter your name or phone number");
         return;
       }
 
@@ -56,10 +55,9 @@ if (signupForm) {
       name: fullName.value,
       phone: phone.value,
       email: email.value,
-      password: password.value,
     };
 
-    // phoneValidation();
+    if(!phoneValidation()) return;
 
     localStorage.setItem("user", JSON.stringify(newUser));
 

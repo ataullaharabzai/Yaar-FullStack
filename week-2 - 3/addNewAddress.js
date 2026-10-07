@@ -3,7 +3,7 @@ const newAddressContainer = document.querySelector(".new-address-inputs");
 const saveNewAddressBtn = document.querySelector(".save-new-address-btn");
 const existingAddressContainer = document.querySelector(".address-cards");
 const placeInput = document.getElementById("address-place");
-const streetInput = document.getElementById("street-address");
+const streetInput = document.getElementById("street-address"); 
 
 addNewAddressBtn.addEventListener("click", () => {
   newAddressContainer.style.display = "flex";
@@ -82,7 +82,7 @@ function createAddressCard(address) {
 
   existingAddressContainer.appendChild(addressCard);
 
-  const removeBtn = document.querySelector(".remove");
+  const removeBtn = addressCard.querySelector(".remove");
 
   removeBtn.addEventListener("click", () => {
     const items = JSON.parse(localStorage.getItem("addresses"));

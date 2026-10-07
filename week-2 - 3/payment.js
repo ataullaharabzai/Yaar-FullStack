@@ -9,12 +9,15 @@ const emptyCardDescription = document.querySelector(".empty-card-des");
 // The food list part in restaurant page (left side)
 
 let carts = JSON.parse(localStorage.getItem("cart")) || [];
-// console.log("loaded: ", carts)
 
 const renderCards = () => {
   checkoutItems.innerHTML = "";
 
-  checkoutLength.textContent = carts.length;
+  const length = carts.reduce((acc, current) => {
+    return acc + current.quantity
+  }, 0)
+
+  checkoutLength.textContent = length;
   emptyCardTitle.style.display = carts.length ? "none" : "block";
   emptyCardDescription.style.display = carts.length ? "none" : "block";
 
@@ -26,28 +29,60 @@ const renderCards = () => {
     const item = document.createElement("div");
     item.classList.add("checkout-item");
 
-    item.innerHTML = `
-      <div>
-        <h4>${food.name}</h4>
-        <p>AFN ${food.price}</p>
-      </div>
+    //div one
+    const info = document.createElement('div')
+    const foodName = document.createElement('h4')
+    foodName.textContent = food.name
+    const foodPrice = document.createElement('p')
+    foodPrice.textContent = food.price
 
-      <div>
-        <button class="fill-checkout-remove" data-id="${food.id}">
-          Remove
-        </button>
-        <button class="fill-checkout-plus" data-id="${food.id}">
-          +
-        </button>
-        <span>${food.quantity}</span>
-      </div>
-    `;
+    info.appendChild(foodName)
+    info.appendChild(foodPrice)
+
+    //div two
+    const actionContainer = document.createElement('div')
+
+    const deleteBtn = document.createElement('button')
+    deleteBtn.classList.add('fill-checkout-remove')
+    deleteBtn.dataset.id = food.id
+    deleteBtn.textContent = 'Remove'
+
+    const addBtn = document.createElement('button')
+    addBtn.classList.add('fill-checkout-plus')
+    addBtn.dataset.id = food.id
+    addBtn.textContent = '+'
+
+    const foodQuantity = document.createElement('span')
+    foodQuantity.textContent = food.quantity
+
+    actionContainer.appendChild(deleteBtn)
+    actionContainer.appendChild(addBtn)
+    actionContainer.appendChild(foodQuantity)
+
+    item.appendChild(info)
+    item.appendChild(actionContainer)
+
+    //TODO: Add a (-) button so customer can decrease the item.
 
     checkoutItems.appendChild(item);
-    // console.log(food)
+
+    const removeBtn = item.querySelector(".fill-checkout-remove");
+    const plusBtn = item.querySelector('.fill-checkout-plus')
+
+    removeBtn.addEventListener("click", () => {
+      const savedFoods = JSON.parse(localStorage.getItem("cart"));
+      const filteredItem = savedFoods.filter((meal) => meal.id !== food.id);
+      localStorage.setItem("cart", JSON.stringify(filteredItem));
+      item.remove()
+      return;
+    });
+
+    plusBtn.addEventListener('click', () => {
+      //FIXME: increase the quantity of item
+    })
   });
 
-  checkoutTotal.textContent = `Total: ${total}`;
+  checkoutTotal.textContent = `AFN ${total}`;
   localStorage.setItem("cart", JSON.stringify(carts));
 };
 
@@ -61,16 +96,20 @@ addBtns.forEach((button) => {
     const name = foodCard.dataset.name;
     const price = Number(foodCard.dataset.price);
 
-    carts.push({
-      id,
-      name,
-      price,
-      quantity: 1,
-    });
+    const isFoodAlreadyExist = carts.find((food) => food.id === id);
 
-    console.log(carts);
+    if (isFoodAlreadyExist) {
+      isFoodAlreadyExist.quantity++;
+    } else {
+      carts.push({
+        id,
+        name,
+        price,
+        quantity: 1,
+        //TODO: here add the portions, tips, spicy level to store in localStorage and after that get it in another cards
+      });
+    }
 
     renderCards();
   });
 });
-

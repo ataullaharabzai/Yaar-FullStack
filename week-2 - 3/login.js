@@ -16,11 +16,11 @@ if (loginForm) {
       return;
     }
 
-    const userData = JSON.parse(localStorage.getItem("user"));
+    const userData = JSON.parse(localStorage.getItem("user")); 
 
-    if (!userData.phone) {
-      alert("Account not found. Create an account to continue.");
-      return;
+    if(!userData) {
+      alert('Account not found!')
+      return
     }
 
     if (phone.value.trim() !== userData.phone.trim()) {
