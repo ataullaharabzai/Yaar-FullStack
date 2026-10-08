@@ -17,6 +17,16 @@ const phoneValidation = () => {
     return;
   }
 
+  if(phone.value.startsWith('0') || phone.value.startsWith('7')) {
+    alert('wrong')
+    return
+  }
+
+  if(phone.value.startsWith('0') && !phone.value.startsWith('7', 1)) {
+    alert('not in afghanistan')
+    return
+  }
+
   if (phone.value.length < 9 || phone.value.length > 10) {
     alert("Invalid phone number");
     return;
@@ -31,7 +41,7 @@ const phoneValidation = () => {
 };
 
 if (signupForm) {
-  signupForm.addEventListener("submit", (e) => {
+  signupForm.addEventListener("submit", (e) => { 
     e.preventDefault();
 
     if (fullName && password) {
