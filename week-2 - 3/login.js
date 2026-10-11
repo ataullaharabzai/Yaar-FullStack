@@ -16,28 +16,23 @@ if (loginForm) {
       return;
     }
 
-    const allUsers = JSON.parse(localStorage.getItem("user"));
+    const allUsers = JSON.parse(localStorage.getItem("user")) || [];
+    const matchUser = allUsers.find(
+      (user) => user && String(user.phone).trim() === phone.value.trim(),
+    );
 
-    allUsers.forEach((user) => {
-      if (!user) {
-        alert("Account not found!");
-        return;
-      }
-      
-      if (phone.value.trim() === user.phone.trim()) { 
-        window.location.href = "home.html";
-        phone.value = "";
-        return;
-      } else {
-        alert("Incorrect phone number, Try  again!");
-      } //FIXME: when the phon number is correct it still gives incorrect alert message!!
+    if (matchUser) {
+      window.location.href = "home.html";
+      phone.value = "";
+      return;
+    }
 
-      // if (phone.value.trim() !== user.phone.trim()) {
-      //   alert("Incorrect phone number, Try  again!");
-      //   return;
-      // }
+    if (allUsers.length === 0) {
+      alert("Account not found!");
+      return;
+    }
 
-    });
+    alert("Incorrect phone number, Try again!");
   });
 }
 
