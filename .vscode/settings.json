@@ -3,5 +3,12 @@
         "Arabzai",
         "Ataullah",
         "Ghiza"
-    ]
+    ],
+    "todo-tree.general.tags": [
+        "TODO",
+        "FIXME",
+        "BUG",
+        "HACK"
+    ],
+    "todo-tree.regex.regex": "((//|#|<!--|;|/\\*|\\*)\\s*($TAGS)|^(\\s*-\\s*)($TAGS))"
 }

@@ -16,23 +16,23 @@ if (loginForm) {
       return;
     }
 
-    const userData = JSON.parse(localStorage.getItem("user"));
+    const allUsers = JSON.parse(localStorage.getItem("user")) || [];
+    const matchUser = allUsers.find(
+      (user) => user && String(user.phone).trim() === phone.value.trim(),
+    );
 
-    if (!userData.phone) {
-      alert("Account not found. Create an account to continue.");
-      return;
-    }
-
-    if (phone.value.trim() !== userData.phone.trim()) {
-      alert("Incorrect phone number, Try  again!");
-      return;
-    }
-
-    if (phone.value.trim() === userData.phone.trim()) {
+    if (matchUser) {
       window.location.href = "home.html";
       phone.value = "";
       return;
     }
+
+    if (allUsers.length === 0) {
+      alert("Account not found!");
+      return;
+    }
+
+    alert("Incorrect phone number, Try again!");
   });
 }
 

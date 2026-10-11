@@ -383,7 +383,7 @@ form {
   width: 3.8rem;
   height: 3.4rem;
   border: 2px solid var(--line);
-  border-radius: var(--radius); 
+  border-radius: var(--radius);
   transition: all 0.15s ease-in;
   display: flex;
   justify-content: center;
@@ -1096,6 +1096,7 @@ header {
   border: 1px solid var(--line);
   background-color: var(--surface);
   border-radius: var(--radius);
+  padding: 10px;
 }
 
 .cart-head {
@@ -1124,6 +1125,99 @@ header {
 .cart-content p {
   font-size: 0.8rem;
   color: var(--muted);
+}
+
+.fill-cart-content {
+  width: 100%;
+  padding: 0 15px;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.checkout-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  border-bottom: 1px solid var(--line);
+  width: 100%;
+  padding: 12px 0;
+}
+
+.checkout-item > div:first-child {
+  flex: 1;
+  min-width: 0;
+  text-align: left;
+}
+
+.checkout-item h4 {
+  color: var(--text);
+  font-size: 0.8rem;
+  font-weight: 600;
+  line-height: 1.35;
+  overflow-wrap: anywhere;
+}
+
+.checkout-item p {
+  margin-top: 4px;
+  color: var(--muted);
+  font-size: 0.72rem;
+  text-align: left;
+}
+
+.checkout-item > div:last-child {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+  gap: 7px;
+}
+
+.fill-checkout-remove {
+  padding: 6px 2px;
+  border: 0;
+  background: transparent;
+  color: var(--danger);
+  font: inherit;
+  font-size: 0.68rem;
+  cursor: pointer;
+}
+
+.fill-checkout-plus {
+  width: 30px;
+  height: 30px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--brand);
+  border-radius: var(--radius);
+  background: var(--brand);
+  color: var(--surface);
+  font: inherit;
+  font-size: 1rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.fill-checkout-plus:hover {
+  background: var(--brand-dark);
+  border-color: var(--brand-dark);
+}
+
+.fill-checkout-remove:focus-visible,
+.fill-checkout-plus:focus-visible {
+  outline: 2px solid var(--brand);
+  outline-offset: 2px;
+}
+
+.checkout-item span {
+  min-width: 18px;
+  color: var(--text);
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-align: center;
 }
 
 /* Product store card */
@@ -4397,7 +4491,6 @@ header {
   .wallet-title {
     display: none;
   }
-
 }
 
 @media (min-width: 1025px) {

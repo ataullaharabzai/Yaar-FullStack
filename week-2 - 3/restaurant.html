@@ -144,7 +144,12 @@
             <p>4 items</p>
           </div>
           <div class="list-popular-foods">
-            <div class="food-card">
+            <div
+              class="food-card"
+              data-id="1"
+              data-name="Chapli Kabab"
+              data-price="380"
+            >
               <div class="card-content">
                 <div class="card-header">
                   <h3 class="food-title">Chapli Kabab</h3>
@@ -169,7 +174,12 @@
               </div>
             </div>
 
-            <div class="food-card">
+            <div
+              class="food-card"
+              data-id="2"
+              data-name="Special Rosh"
+              data-price="280"
+            >
               <div class="card-content">
                 <div class="card-header">
                   <h3 class="food-title">Special Rosh</h3>
@@ -194,7 +204,12 @@
               </div>
             </div>
 
-            <div class="food-card">
+            <div
+              class="food-card"
+              data-id="3"
+              data-name="Ghiza Special Burger"
+              data-price="180"
+            >
               <div class="card-content">
                 <div class="card-header">
                   <h3 class="food-title">Ghiza Special Burger</h3>
@@ -218,7 +233,13 @@
                 </div>
               </div>
             </div>
-            <div class="food-card">
+
+            <div
+              class="food-card"
+              data-id="4"
+              data-name="Special Mahee"
+              data-price="420"
+            >
               <div class="card-content">
                 <div class="card-header">
                   <h3 class="food-title">Special Mahee</h3>
@@ -250,13 +271,25 @@
       <div class="checkout-cart">
         <div class="cart-head">
           <h3>Your cart</h3>
-          <p>0</p>
+          <p class="checkout-length">0</p>
         </div>
         <div class="cart-content">
-          <span>Your cart is empty</span>
-          <p>Browse kitchen near you and add something you love.</p>
+          <span class="empty-card-title">Your cart is empty</span>
+          <p class="empty-card-des">Browse kitchen near you and add something you love.</p>
+
+          
+        </div>
+        <div class="fill-cart-content">
+          <div class="checkout-items"></div>
+
+          <div class="checkout-total">
+            <span>Total:</span>
+            <span class="checkout-total-price">AFN 0</span>
+          </div>
         </div>
       </div>
     </section>
+
+    <script src="payment.js"></script>
   </body>
 </html>

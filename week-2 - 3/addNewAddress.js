@@ -82,7 +82,7 @@ function createAddressCard(address) {
 
   existingAddressContainer.appendChild(addressCard);
 
-  const removeBtn = document.querySelector(".remove");
+  const removeBtn = addressCard.querySelector(".remove");
 
   removeBtn.addEventListener("click", () => {
     const items = JSON.parse(localStorage.getItem("addresses"));
@@ -99,12 +99,13 @@ savedAddresses.forEach((address) => {
   createAddressCard(address);
 });
 
-
 // ------- logout ---------
 
-const logout = document.querySelector('.logout')
+const logout = document.querySelector(".logout");
 
-logout.addEventListener('click', () => {
-    localStorage.removeItem('user')
-    window.location.href = 'createAccount.html'
-})
+if (logout) {
+  logout.addEventListener("click", () => {
+    localStorage.removeItem("user");
+    window.location.href = "createAccount.html";
+  });
+}
