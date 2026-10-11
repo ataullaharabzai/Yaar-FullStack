@@ -75,15 +75,14 @@ const renderCards = () => {
     });
 
     plusBtn.addEventListener("click", () => {
-      //FIXME: increase the quantity of item
+      food.quantity++;
+      renderCards();
     });
   });
 
   checkoutTotal.textContent = `AFN ${total}`;
   localStorage.setItem("cart", JSON.stringify(carts));
 };
-
-// carts = carts.filter((meal) => meal.id !== food.id);
 
 renderCards();
 
