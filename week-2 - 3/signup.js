@@ -7,6 +7,8 @@ const countryCode = document.getElementById("countryCode");
 
 // ------------ Create account page -------------
 
+let users = []
+
 const phoneValidation = () => {
   if (!phone || !countryCode) {
     return;
@@ -17,14 +19,14 @@ const phoneValidation = () => {
     return;
   }
 
-  if(phone.value.startsWith('0') || phone.value.startsWith('7')) {
-    alert('wrong')
-    return
-  }
-
-  if(phone.value.startsWith('0') && !phone.value.startsWith('7', 1)) {
-    alert('not in afghanistan')
-    return
+  if (phone.value.startsWith("0")) {
+    if (!phone.value.startsWith("7", 1)) {
+      alert("Out of the country");
+      return;
+    }
+  } else if (!phone.value.startsWith("7")) {
+    alert("Afghan numbers required 7 at first");
+    return;
   }
 
   if (phone.value.length < 9 || phone.value.length > 10) {
@@ -41,7 +43,7 @@ const phoneValidation = () => {
 };
 
 if (signupForm) {
-  signupForm.addEventListener("submit", (e) => { 
+  signupForm.addEventListener("submit", (e) => {
     e.preventDefault();
 
     if (fullName && password) {
@@ -67,9 +69,11 @@ if (signupForm) {
       email: email.value,
     };
 
-    if(!phoneValidation()) return;
+    users.push(newUser)
 
-    localStorage.setItem("user", JSON.stringify(newUser));
+    if (!phoneValidation()) return;
+
+    localStorage.setItem("user", JSON.stringify(users));
 
     window.location.href = "home.html";
   });

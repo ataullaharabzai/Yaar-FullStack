@@ -3,7 +3,7 @@ const newAddressContainer = document.querySelector(".new-address-inputs");
 const saveNewAddressBtn = document.querySelector(".save-new-address-btn");
 const existingAddressContainer = document.querySelector(".address-cards");
 const placeInput = document.getElementById("address-place");
-const streetInput = document.getElementById("street-address"); 
+const streetInput = document.getElementById("street-address");
 
 addNewAddressBtn.addEventListener("click", () => {
   newAddressContainer.style.display = "flex";
@@ -99,12 +99,13 @@ savedAddresses.forEach((address) => {
   createAddressCard(address);
 });
 
-
 // ------- logout ---------
 
-const logout = document.querySelector('.logout')
+const logout = document.querySelector(".logout");
 
-logout.addEventListener('click', () => {
-    localStorage.removeItem('user')
-    window.location.href = 'createAccount.html'
-})
+if (logout) {
+  logout.addEventListener("click", () => {
+    localStorage.removeItem("user");
+    window.location.href = "createAccount.html";
+  });
+}

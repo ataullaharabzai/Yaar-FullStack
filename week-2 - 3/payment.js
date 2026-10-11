@@ -14,8 +14,8 @@ const renderCards = () => {
   checkoutItems.innerHTML = "";
 
   const length = carts.reduce((acc, current) => {
-    return acc + current.quantity
-  }, 0)
+    return acc + current.quantity;
+  }, 0);
 
   checkoutLength.textContent = length;
   emptyCardTitle.style.display = carts.length ? "none" : "block";
@@ -30,61 +30,60 @@ const renderCards = () => {
     item.classList.add("checkout-item");
 
     //div one
-    const info = document.createElement('div')
-    const foodName = document.createElement('h4')
-    foodName.textContent = food.name
-    const foodPrice = document.createElement('p')
-    foodPrice.textContent = food.price
+    const info = document.createElement("div");
+    const foodName = document.createElement("h4");
+    foodName.textContent = food.name;
+    const foodPrice = document.createElement("p");
+    foodPrice.textContent = food.price;
 
-    info.appendChild(foodName)
-    info.appendChild(foodPrice)
+    info.appendChild(foodName);
+    info.appendChild(foodPrice);
 
     //div two
-    const actionContainer = document.createElement('div')
+    const actionContainer = document.createElement("div");
 
-    const deleteBtn = document.createElement('button')
-    deleteBtn.classList.add('fill-checkout-remove')
-    deleteBtn.dataset.id = food.id
-    deleteBtn.textContent = 'Remove'
+    const deleteBtn = document.createElement("button");
+    deleteBtn.classList.add("fill-checkout-remove");
+    deleteBtn.dataset.id = food.id;
+    deleteBtn.textContent = "Remove";
 
-    const addBtn = document.createElement('button')
-    addBtn.classList.add('fill-checkout-plus')
-    addBtn.dataset.id = food.id
-    addBtn.textContent = '+'
+    const addBtn = document.createElement("button");
+    addBtn.classList.add("fill-checkout-plus");
+    addBtn.dataset.id = food.id;
+    addBtn.textContent = "+";
 
-    const foodQuantity = document.createElement('span')
-    foodQuantity.textContent = food.quantity
+    const foodQuantity = document.createElement("span");
+    foodQuantity.textContent = food.quantity;
 
-    actionContainer.appendChild(deleteBtn)
-    actionContainer.appendChild(addBtn)
-    actionContainer.appendChild(foodQuantity)
+    actionContainer.appendChild(deleteBtn);
+    actionContainer.appendChild(addBtn);
+    actionContainer.appendChild(foodQuantity);
 
-    item.appendChild(info)
-    item.appendChild(actionContainer)
+    item.appendChild(info);
+    item.appendChild(actionContainer);
 
     //TODO: Add a (-) button so customer can decrease the item.
 
     checkoutItems.appendChild(item);
 
     const removeBtn = item.querySelector(".fill-checkout-remove");
-    const plusBtn = item.querySelector('.fill-checkout-plus')
+    const plusBtn = item.querySelector(".fill-checkout-plus");
 
     removeBtn.addEventListener("click", () => {
-      const savedFoods = JSON.parse(localStorage.getItem("cart"));
-      const filteredItem = savedFoods.filter((meal) => meal.id !== food.id);
-      localStorage.setItem("cart", JSON.stringify(filteredItem));
-      item.remove()
-      return;
+      carts = carts.filter((savedMeal) => savedMeal.id !== food.id);
+      renderCards();
     });
 
-    plusBtn.addEventListener('click', () => {
+    plusBtn.addEventListener("click", () => {
       //FIXME: increase the quantity of item
-    })
+    });
   });
 
   checkoutTotal.textContent = `AFN ${total}`;
   localStorage.setItem("cart", JSON.stringify(carts));
 };
+
+// carts = carts.filter((meal) => meal.id !== food.id);
 
 renderCards();
 
